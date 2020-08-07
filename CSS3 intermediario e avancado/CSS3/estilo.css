@@ -1,0 +1,211 @@
+
+/******Seletor universal - seleciona todos os elementos da página *******/
+/*
+* {
+	border: 1px solid red;
+}
+
+
+
+/***Seletor de texto ***/
+
+/*
+h1{
+	color: blue;
+}
+
+
+/***Seletor de classe ***/
+/*
+.verde {
+	color: green;
+	text-decoration: underline;
+}
+
+
+/***Seletor de ID ***/
+/*
+#cabecalho {
+	border: 6px solid purple;
+}
+
+
+/***Seletor de filho direto de outro. lê da direita pra esquerda. Permite selecionar elementos que estão diretamente 
+dentro de um outro elemento ***/
+
+/*
+li>a {
+	color: blue;
+	text-decoration: none;
+
+}
+
+/**Seletor de descendente de outro elemento, mesmo que ele seja filho direto de outro elemento diferente.***/
+
+/*
+li a {
+	color: blue;
+	text-decoration: none;
+
+}
+
+
+/******Seletor de irmão adjacente (logo abaixo)- seleciona um elemento que é irmão próximo do outro***********/
+/*
+h1+p {
+
+}
+
+/*************Seletor de irmão geral- basta que o paragrafos sejam irmãos,
+ tem que ser após do elemento que pedir  *************/
+/*
+h1~p{
+
+}
+
+
+*/
+
+/*
+span~p {
+	background: yellow;
+}
+}
+
+*/
+
+
+/**folha de estilo em cascata**/
+/****************HERANÇA E ESPECIFICIDADE***********************/
+
+/*Exemplo de herança é a configuração de elementos dentro do body na folha de estilo**/
+
+/*exemplo de especificidade no caso de dois seletores iguais sempre o ultimo que será aplicado,
+ excessao é se colocar após a declaração o nome !important que define o quanto é importante a propriedade.*/
+
+/**Se um seletor for mais especifico que outro a regra mais especificada será aplicada.
+em ordem de especificidade:  h2#amarelo, h2.verde, h2;
+
+exemplo: * {
+	color: red;
+	}
+
+
+	h2 {
+	color: blue;
+	}
+
+
+**/
+
+
+
+/*************BARRA DE NAVEGAÇÃO VERTICAL *****************/
+/*
+
+
+ul {
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+/**text-ident - impurra o texto. **/
+/**font size - é o tamanho da fonte**/
+/** line height - define a altura da linha em que está o texto, o tamanho será igual ao do height**/
+/*
+ul a {
+	border: 1px solid red;
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background:#f7b600 url(../imagens/menu.png) no-repeat left bottom;
+
+}
+
+
+
+/*
+/*MOVIMENTAR BACKGROUNG */
+
+/*
+a:hover, .selecionado a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a, 
+#servicos #navegacao .servicos a, 
+#noticias #navegacao .noticias a,
+#contatos #navegacao .contatos a{
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+
+
+}
+
+
+/**
+li {
+	padding: 5px 20px;
+	background: url(../imagens/seta.png) no-repeat left center;
+
+}
+
+
+
+
+
+/*************BARRA DE NAVEGAÇÃO HORIZONTAL *****************/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+		width: 720px;
+	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+}
+
+
+ul li {
+	
+	float: left;
+
+}
+
+ul a {
+	display: block;
+	padding: 0 2em;
+	line-height: 2em;
+	text-decoration: none;
+	color: white;
+	background: url(../imagens/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a {
+	background-color: none;
+}
+
+ul a:hover {
+	color: #085662;
+	background-color: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a {
+	color: #085662;
+	background: #44cade;
+}
