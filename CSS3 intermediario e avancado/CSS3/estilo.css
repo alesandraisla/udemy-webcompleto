@@ -205,7 +205,9 @@ ul a:hover {
 
 #home #navegacao .home a,
 #sobre #navegacao .sobre a,
-#servicos #navegacao .servicos a {
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a{
 	color: #085662;
 	background: #44cade;
 }
