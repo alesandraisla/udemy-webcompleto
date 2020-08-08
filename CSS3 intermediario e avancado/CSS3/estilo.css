@@ -168,7 +168,7 @@ li {
 
 
 /*************BARRA DE NAVEGAÇÃO HORIZONTAL *****************/
-
+/*
 ul {
 	margin: 0;
 	padding: 0;
@@ -210,4 +210,59 @@ ul a:hover {
 #contato #navegacao .contato a{
 	color: #085662;
 	background: #44cade;
+}
+
+
+*/
+
+/*********************BARRA DE NAVEGAÇÃO COM ABAS ***************/
+
+
+body {
+	font-family: "trebuchet MS", helvetica, sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+
+}
+
+/*Deve aplicar um background dentro do <li> esse será right  e depois dentro do link <a> esse será left*/
+
+ul li {
+
+	float: left;
+	background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+
+li a {
+	
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url(../imagens/aba-esquerda.png)no-repeat top left;
+	color: white;
+}
+
+/*Mostrar a cor diferente no link ao passar o mouse */
+ul a:hover {
+	color: #894a1f;
+}
+
+/*marcar o menu quando está ativo, podendo fazer esse ajuste do id somente no campo desejado
+da pagina, exemplo no index coloquei apenas no home, no servico coloquei só nele*/
+
+
+ul #atual {
+	background: url(../imagens/aba-direita-atual.png)no-repeat top right;
+}
+
+ul #atual a {
+	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+
 }
