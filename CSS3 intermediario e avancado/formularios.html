@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Estilizando formulários</title>
+		<meta charset="utf-8">
+
+		<!-- Estilo customzizado -->
+		<link rel="stylesheet" type="text/css" href="css3/estilos.css">
+	</head>
+	<body>
+
+		<h2>Estilizando Formulários</h2>
+
+		<form>
+			
+			<!--Agrupar dados semelhantes-->
+				<fieldset>
+				<legend>Detalhes de contato</legend>
+
+				<div>
+					<!--etiqueta ou rotulo utilizando o atributo for o label ficará associado ao input, ou pode envolver o input dentro do label assim nao precisará colocar o for.-->
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" id="nome">
+				</div>
+				<div>
+					<label for="email">Email:</label>
+						<input type="text" name="email" id="email">
+					
+				</div>
+
+				<div>
+					<label for="url">URL:</label>
+					<input type="text" name="url" id="url">
+				</div>
+				
+			</fieldset>
+
+			<fieldset>
+				<legend>Comentários</legend>
+
+				<div>
+					<!-- usa o for no label para ao clicar no nome mensagem ele vá diretamente para a caixa de digitação-->
+					<label for="mensagem">Mensagem:</label>
+					<textarea name="mensagem" id="mensagem"></textarea>
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Lembrar de mim</legend>
+
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="sim">Sim
+					</label>
+				</div>
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="nao">Não
+					</label>
+
+				</div>
+
+			</fieldset>
+
+		</form>
+
+	</body>
+</html>

@@ -1,0 +1,102 @@
+/**************Estilizando tabelas **************/
+
+/*
+body {
+	font-family: "trebuchet Ms", helvetica, sans-serif;
+}
+
+
+table {
+	width: 600px;
+	border-collapse: separate; /*collapse*/
+/*}
+
+/*
+
+th, td {
+	padding: 7px;
+}
+
+
+
+th {
+	text-transform: uppercase; /* letras maiusculas *//*
+	border-top: 1px solid #999;   /*borda superior*//*
+	border-bottom: 1px solid #111;  /*borda inferior*//*
+	text-align: left; /*alinhar o texto*//*
+	font-size: 90%; /* tamanho da fonte*//*
+	letter-spacing: 0.1em;  /*Espaçamento entre as letras*//*
+}
+
+
+
+
+/* diferenciar a cor das linhas *//*
+tr.alternado {
+	background-color: #efefef;
+}
+
+
+
+/*Alinhando as linhas*//*
+.numero {
+	text-align: right;
+}
+
+
+
+tr:hover {
+	background-color: #c3e6e5;
+}
+
+
+*/
+
+/********************ESTILIZANDO FORMULÁRIOS**************************/
+
+
+body {
+	font-family: "trebuchet MS", helvetica, sans-serif;
+}
+
+
+fieldset {
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+}
+
+
+
+/*Deixará mais escuro*/
+legend {
+	font-weight: bold;
+}
+
+
+
+/* é um elemento tipo inline, por isso usa o display block*/
+/*Cursor pointer muda o curso do mouse para uma mao*/
+label {
+    cursor: pointer;
+	display: block;
+}
+
+
+input [type="text"] {
+	width: 20em;
+}
+
+textarea {
+	width: 20em;
+	height: 10em;
+}
+
+/*seletor de atributo
+[]cochete*/
+
+
+input.radio, input.checkbox, input.submit {
+	width: auto;
+}

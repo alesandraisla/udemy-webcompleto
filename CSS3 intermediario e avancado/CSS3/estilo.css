@@ -217,7 +217,7 @@ ul a:hover {
 
 /*********************BARRA DE NAVEGAÇÃO COM ABAS ***************/
 
-
+/*
 body {
 	font-family: "trebuchet MS", helvetica, sans-serif;
 }
@@ -231,7 +231,7 @@ ul {
 }
 
 /*Deve aplicar um background dentro do <li> esse será right  e depois dentro do link <a> esse será left*/
-
+/*
 ul li {
 
 	float: left;
@@ -250,6 +250,7 @@ li a {
 }
 
 /*Mostrar a cor diferente no link ao passar o mouse */
+/*
 ul a:hover {
 	color: #894a1f;
 }
@@ -257,7 +258,7 @@ ul a:hover {
 /*marcar o menu quando está ativo, podendo fazer esse ajuste do id somente no campo desejado
 da pagina, exemplo no index coloquei apenas no home, no servico coloquei só nele*/
 
-
+/*
 ul #atual {
 	background: url(../imagens/aba-direita-atual.png)no-repeat top right;
 }
@@ -266,3 +267,122 @@ ul #atual a {
 	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
 
 }
+
+
+*/
+
+/*Layout fixo quando reduz quase nao da pra aparecer e quando aumenta o tamanho dele sobra muito espaço lateral */
+
+body {
+	font-family: "trebuchet MS", helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+
+/* width define a largura , margin usando 0 foi para o superior e interior o auto (laterais) deixou 
+todo o conteudo no centro do site*/
+
+#container {
+	border: 1px solid red;
+	width: 960px; /*85%; /*720px;*/
+	margin:0 auto;
+	background: #fff url(../imagens/coluna.png) repeat-y left top;
+	min-width: 720px; /*define uma largura minima*/
+	max-width: 1280px;  /*define o tamanho maximo da largura*/
+	/*min-height: define uma altura minima*/
+	/*max-height: define uma altura maxima */
+}
+
+
+/*height - altura / text-align centralizou o texto / 
+line-height centralizou a largura do texto superior e inferior  */
+
+#marca {
+	width: 100%;
+	height: 200px;
+	background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
+	text-align: center;
+	line-height: 200px;
+}
+
+
+/* definiu a lagura menor que o container e float para que a navegacao fique à direita*/
+
+#conteudo {
+	width: 75%; /*520px; 520*100/700=74.28*/
+	float: right;
+}
+
+
+#conteudo-principal {
+
+	width: 63%; /*320px; 320*100/500= 64*/
+	float: left;
+}
+
+img.img-noticia {
+
+	width: 94%;
+	padding: 2%;
+	max-width: 600px;
+}
+
+#conteudo-secundario {
+
+	width:34%; /*180px; 180*100/500=36*/
+	float: right;
+	background: #d1d1d1;
+}
+
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* definiu a largura menor que o container a diferença da soma do 
+width do conteudo com o navegacao será o espaço entre os dois,
+float para que a navegacao fique à esquerda, 
+padding top espaçamento superior
+padding bottom espaçamento inferior
+*/
+
+#navegacao {
+	width: 23%; /*180px;   180*100/700= 25.71 */
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/*background: #d1d1d1;*/
+}
+
+/*Retirou o ponto da listagem */
+#navegacao ul {
+	list-style: none;
+}
+
+/*retirou o underline*/
+#navegacao li a {
+	text-decoration: none;
+}
+
+/*Clear both para limpar a propridade flutuante que é o float. 
+E usou o espaçamento */
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}
+
+/*
+#imagem {
+	width: 90%;
+	border: 1px solid red;
+	overflow: hidden; /*esconder o conteudo que ultrapassar das áreas da imagem
+}
+	*/
+
+
