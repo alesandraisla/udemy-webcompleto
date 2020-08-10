@@ -53,7 +53,7 @@ tr:hover {
 */
 
 /********************ESTILIZANDO FORMULÁRIOS**************************/
-
+/*
 
 body {
 	font-family: "trebuchet MS", helvetica, sans-serif;
@@ -69,7 +69,7 @@ fieldset {
 
 
 
-/*Deixará mais escuro*/
+/*Deixará mais escuro*//*
 legend {
 	font-weight: bold;
 }
@@ -77,7 +77,7 @@ legend {
 
 
 /* é um elemento tipo inline, por isso usa o display block*/
-/*Cursor pointer muda o curso do mouse para uma mao*/
+/*Cursor pointer muda o curso do mouse para uma mao*//*
 label {
     cursor: pointer;
 	display: block;
@@ -96,7 +96,90 @@ textarea {
 /*seletor de atributo
 []cochete*/
 
-
+/*
 input.radio, input.checkbox, input.submit {
 	width: auto;
+}
+
+
+/******************Estilizando formulários parte 2**************************************************/
+
+
+
+body {
+font-family: "Trebuchet Ms", helvetica, sans-serif;
+background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
+
+}
+
+/*definir - largura, altura, plano de fundo com transparência 0.3 rgba, borda radius canto mais redondo,  
+margem 0 auto deixou no centro. text-align deixou centralizado.
+configuração de prefixo:;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;*/
+
+#container {
+
+	width: 400px;
+	height: 300px;
+	background-color: rgba(255,255,255,0.3);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
+}
+
+
+#container img {
+	width: 120px;
+	height: 120px;
+	margin-top: -60px;
+	margin-bottom: 30px;
+}
+
+
+/*margin bottom separou os espaços entre os formularios */
+input {
+	height: 40px;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding-left: 40px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 10px;
+
+}
+
+
+input.email {
+	background-image: url(../imagens/icone-usuario.png);
+	}
+
+input.senha {
+	background-image: url(../imagens/icone-cadeado.png);
+}
+
+
+/*linear-gradient é um degradê de duas cores **/
+
+input.submit {
+	color: #fff;	
+	background-color: #f79300;
+	border: 2px solid #db7d00;
+	padding: 5px 20px;
+	height: 45px;
+	width: 90%;
+
+
+	background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+	background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+	background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+	background: linear-gradient(to bottom, #faa600, #f68a00);
+
+
+
 }
