@@ -1,0 +1,320 @@
+/*ESTRUTURA DO SITE*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "trebuchet MS", helvetica, sans-serif;
+	background: #fff url(../imagens/fundo.png) repeat-x;
+}
+
+/**O tamanho da largura do layout será definido no container*/
+#container {
+	width: 750px;
+	margin: 0 auto;
+}
+
+#topo {
+	height: 150px;   /*altura*/
+	background: url(../imagens/detalhe-topo.png) no-repeat right top;  /*imagem do brasil à direita*/
+	padding-top: 25px;  /*espaçamento interno para visualizar a imagem completa*/
+	/*border: 1px solid red;*/
+}
+
+.logo {
+	width: 152px;
+	height: 66px;
+	background: url(../imagens/logo.png) no-repeat center;
+	text-indent: -3000px; /*vai indentar o conteudo do usuario - empurrar (esconder)* nao usar o display none/*/
+}
+
+/*barra de navegacao horizontal*/
+
+
+a:link, a:visited {
+	color: #b10333;
+	padding: 2px;
+}
+
+a:hover {
+	color: #e50040;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+}
+
+
+#topo ul {
+	margin-top: 30px; 
+	background: #b10333;
+	float: left;
+}
+
+#topo ul li {
+	float: left;  
+
+}
+
+#topo ul a {
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;  
+	line-height: 2.1em; 
+	text-decoration: none;
+	color: #fff;
+	background: url(../imagens/divisor.png) no-repeat left center;
+}
+
+/*remove o divisor do background*/
+#topo ul .primeiro a {
+	background: none;
+
+}
+
+
+#topo ul a:hover {
+	color: #69001d;
+}
+
+/*marcar como selecionado*/
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos {
+	color: #fff;
+	background: #de003e;
+	cursor: text; /*Aparece um cursor de texto e nao a mãozinha*/
+
+}
+
+
+
+/************Configura layout de três colunas***************/
+
+
+#conteudo {
+	background: #f5f5f5;
+	margin-top: 60px;
+}
+
+
+/*float left para que todos fiquem à direita em ordem crescente e precisará usar o margin para posicionar 
+no local que quer*/
+
+
+/*pode definir um valor padrao e so alterar o width e margin para quando for apenas duas colunas ou uma coluna*/
+
+#tres-colunas #primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;  /*margem superior, direita, inferior, esquerda*/
+
+}
+
+#duas-colunas #primario {
+	width: 555px;
+	float: left;
+	margin: 0 0 20px 195px;
+	background: blue;
+
+}
+
+#uma-coluna #primario {
+	width: 750px;
+	float: left;
+	margin: 0 0 20px 0;
+	background: blue;
+}
+
+
+
+#secundario {
+	width: 270px;
+	margin: 0 0 20px 15px;
+	float: left;
+}
+
+
+
+#lateral {
+	width: 180px;
+	margin: 0 0 20px -750px;
+
+	float: left;
+}
+
+
+
+/***************	CAIXA********************/
+
+.caixa {
+	margin: 10px 0;
+	padding: 5px 0 5px 0;
+	background: #f3f3f3 url(../imagens/fundo-caixa-png);
+}
+
+
+.caixa-conteudo {
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+h2 {
+	font-size: 1.1em;
+	background: #294c71;
+	color: #fff;
+	padding: 5px;
+}
+
+
+
+/*********************rodape********************/
+/*colocou a cor de fundo e deu espaçamento*/
+#container-rodape {
+	background: #294c71;
+	padding: 20px;
+}
+
+#rodape {
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+
+}
+
+
+/**********Layout com 2 colunas *********/
+
+
+/* é só criar uma id com o nome uma-coluna, duas-colunas, tres-colunas e aplicar no body 
+e só alterar o width do primarios, pois a quantidade de coluna só vai interferir na inclusão de primario + secundario ou 
+só primario.
+
+
+
+/*****************FORMATA OS MENUS LATERAIS************************/
+
+
+#lateral ul a {
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;  /*altura da linha */
+	color:#000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+
+label {
+	display: block;
+	cursor: pointer;
+}
+
+input {
+	padding: 5px;
+	width: 120px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+
+input.submit {
+	width: 80px;
+	color: #fff;
+	background-color: #b10333;
+	border: 2px solid #870529;
+}
+
+
+
+/*efeito hover */
+
+#lateral ul a:hover {
+	color: #a1a1a1;
+	padding-left: 20px; /*alinhar a partir da esquerda para a direita*/
+	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+}
+
+
+/***********CONTEUDOS PRINCIPAIS formatando imagens********************/
+
+
+img {
+	border: 2px solid #dfdfdf;
+}
+
+img.imagem-principal {
+	border: 3px solid pink;
+	width: 98%;
+
+}
+
+
+h3 {
+	text-transform: uppercase; /*para ficar maiusculo*/
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+
+
+h3.destaque {
+	background: #b10333;
+	color:#fff;
+}
+
+
+
+h3.entrevista {
+	background: #de003e;
+	color: black;
+}
+
+
+/**********************CRIANDO LISTA ÁREA DE NOTICIAS******************************/
+
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 65px;
+}
+
+
+#lista-noticias li a img{
+	float: left;
+	margin: 5px;
+}
+
+
+#lista-noticias li a {
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+
+#lista-noticias li a p {
+	font-size: 0.7em;
+	color: #000;
+}
+
+
+#lista-noticias li a h3 {
+	padding:0;
+	color: #3e7ab9;
+}
+
+
+#lista-noticias li:hover {
+	background: #eee;
+	cursor: pointer;
+}

@@ -104,7 +104,7 @@ input.radio, input.checkbox, input.submit {
 
 /******************Estilizando formulários parte 2**************************************************/
 
-
+/*
 
 body {
 font-family: "Trebuchet Ms", helvetica, sans-serif;
@@ -116,7 +116,7 @@ background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
 margem 0 auto deixou no centro. text-align deixou centralizado.
 configuração de prefixo:;
 -webkit-border-radius:10px;
--moz-border-radius:10px;*/
+-moz-border-radius:10px;*//*
 
 #container {
 
@@ -140,7 +140,7 @@ configuração de prefixo:;
 }
 
 
-/*margin bottom separou os espaços entre os formularios */
+
 input {
 	height: 40px;
 	width: 80%;
@@ -164,7 +164,7 @@ input.senha {
 }
 
 
-/*linear-gradient é um degradê de duas cores **/
+/*linear-gradient é um degradê de duas cores **//*
 
 input.submit {
 	color: #fff;	
@@ -183,3 +183,53 @@ input.submit {
 
 
 }
+
+/**********************Arredondamento com imagens*****************************/
+
+
+
+/*
+.caixa {
+	width: 400px;
+	background: #dedede url(../imagens/topo2.png) no-repeat left top;
+
+}
+
+.caixa h2 {
+	padding: 10px 20px 0 20px;
+}
+
+
+.caixa p {
+	padding: 0 20px 20px 20px;
+	background: url(../imagens/baixo2.png) no-repeat left bottom;
+}
+
+*/
+
+/*repeat-y repete na vertical*/
+
+.caixa {
+	width: 400px;
+	background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y;
+}
+
+.caixa h2 {
+	padding: 10px 20px 0 20px;
+	background: url(../imagens/topo2.png) no-repeat left top;
+}
+
+.caixa p {
+	padding: 0 20px;
+	margin-bottom: 0;
+}
+
+
+.caixa .ultimo {
+	padding-bottom:  20px;
+	background: url(../imagens/baixo2.png) no-repeat left bottom;
+	width: 400px;
+	height: 24px;
+}
+
+
