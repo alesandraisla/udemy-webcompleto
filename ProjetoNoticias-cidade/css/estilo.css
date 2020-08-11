@@ -191,12 +191,6 @@ h2 {
 }
 
 
-/**********Layout com 2 colunas *********/
-
-
-/* é só criar uma id com o nome uma-coluna, duas-colunas, tres-colunas e aplicar no body 
-e só alterar o width do primarios, pois a quantidade de coluna só vai interferir na inclusão de primario + secundario ou 
-só primario.
 
 
 
