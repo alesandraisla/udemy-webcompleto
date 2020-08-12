@@ -1,0 +1,30 @@
+
+
+#caixa {
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	padding: 50px;
+	margin: 10px;
+	moz-box-sizing: border-box;
+	webkit-box-sizing: border-box;
+	box-sizing: border-box; /*padding perde o comportamento de influenciar no tamanho da caixa*/
+	
+
+
+	/*prefixos necessarios para que apareça a configuração nos browsers antigos*//*
+	-webkit-border-radius: 20px 90px;
+	-moz-border-radius: 20px 90px;
+	border-radius: 10px 50px 80px 100px;  /*define um arredondamento nos cantos da caixa */
+}
+
+.arredondamento {
+	border-radius: 150px;
+}
+
+
+#caixa2 {
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	margin: 10px;
