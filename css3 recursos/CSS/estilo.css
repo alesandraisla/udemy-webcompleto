@@ -1,11 +1,10 @@
 
-
+/*
 #caixa {
 	width: 300px;
 	height: 300px;
 	background-color: #b9c941;
 	padding: 50px;
-	margin: 10px;
 	moz-box-sizing: border-box;
 	webkit-box-sizing: border-box;
 	box-sizing: border-box; /*padding perde o comportamento de influenciar no tamanho da caixa*/
@@ -15,8 +14,8 @@
 	/*prefixos necessarios para que apareça a configuração nos browsers antigos*//*
 	-webkit-border-radius: 20px 90px;
 	-moz-border-radius: 20px 90px;
-	border-radius: 10px 50px 80px 100px;  /*define um arredondamento nos cantos da caixa */
-}
+	border-radius: 10px 50px 80px 100px;  /*define um arredondamento nos cantos da caixa *//*
+}/*
 
 .arredondamento {
 	border-radius: 150px;
@@ -27,4 +26,19 @@
 	width: 300px;
 	height: 300px;
 	background-color: #b9c941;
-	margin: 10px;
+	margin: 10px;*/
+
+	#caixa {
+		width: 300px;
+		height: 300px;/*
+		background: url("../imagens/camera.png");*/
+		background: linear-gradient(to bottom, purple, pink, green, yellow);  
+		/*gradiente começa uma cor e termina em outra*//*
+		background: radial-gradient(red, green);/*gradiente radial fica um circulo*/
+	}
+
+	#caixa h1 {/*
+		background: rgb(255,255,255);  /*definir cores rgb */
+		background: rgba(255,255,255,1);  /*define transparencia */
+
+	}
