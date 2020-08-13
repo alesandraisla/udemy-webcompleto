@@ -44,28 +44,105 @@
 	}
 */
 
+/*Sombras*/
+
+/*
 	#caixa {
 		width: 300px;
 		height: 300px;
 		padding: 8px;
 		margin: 20px;
 		background: #009670;
-		box-shadow: 40px 200px 20px 20px pink; /*aplica a sombra em uma caixa, na div, 
+		box-shadow: 40px 200px 20px 20px pink; /*aplica a sombra em uma caixa,
 		pode aplicar mais um parâmetro efeito borrado o tamanho nao muda
-		 e o quarto parametro é o spread a sombra espalha, ou seja, aumenta de tamanho*/
-	
-	}
+		 e o quarto parametro é o spread a sombra espalha o tamanho*/
+	/*
+	}/*
 
 	#caixa h1 {
 		color: white;/*
 		text-shadow: 2px 20px red; /*Aplica uma sombra em um texto.
 		O primeiro parâmetro movimenta a sombra na horizontal e o segundo na vertical,
-		 funciona como efeito de fundo um background, numeros positivos p direita negativos pra esquerda
-		 positivo pra cima negativo pra baixo*/
+		 funciona como efeito de fundo um background*//*
 		 text-shadow: 20px 20px 20px; rgba(0,0,0,0.5); 
-		 /*pode colocar um blurred que deixa borrado que é o terceiro parâmetro*/
+		 /*blurred que deixa borrado que é o terceiro parâmetro*/
+/*
+	*/
+
+/*Animações*/
+/*
+@keyframe /*para identificar que está utilizando uma animação*/
+
+@-webkit-keyframes animacao-caixa {
+	from {
+		background-color: red;
+		} /*Estado inicial*/
+	to {
+		background-color: yellow;
+		} /*Estado final*/
+}
+
+@-moz-keyframes animacao-caixa {
+	from {
+		background-color: red;
+		}
+		to {
+			background-color: yellow;
+		}
+	}
+
+
+@-o-keyframes animacao-caixa {
+	from{
+		background-color: red;
 
 	}
+	to {
+		background-color: yellow;
+	}
+}
+
+@keyframes animacao-caixa {
+	from{
+		background-color: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+
+	}
+	to {
+		background-color: yellow;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+
+
+
+
+
+
+	#caixa {
+		width: 300px;
+		height: 300px;
+		background-color: red;
+		position: relative;  /*consegue movimentar a posição*/
+		-webkit-animation-name: animacao-caixa;
+		-moz-animation-name: animacao-caixa;
+		-o-animation-name: animacao-caixa;
+		animation-name: animacao-caixa;
+		animation-duration: 1s;
+		animation-delay: 100ms; /*Tempo de espera para começar a animação*/
+		animation-iteration-count:infinite; /*Quantas vezes quer que seja executado*/
+		animation-direction: alternate;/*alterar a direção da animação e 
+		o reverse é inverso*/
+
+		/*ou pode usar tudo em uma unica propriedade
+
+		animation: animacao-caixa 5s 2s 2 alternate;*/
+		}
 
 
 
