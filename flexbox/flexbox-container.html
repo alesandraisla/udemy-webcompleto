@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+		<head>
+			<title>Flexbox - Flexible box layout</title>
+			<meta charset="utf-8">
+
+			<style type="text/css">
+
+				#conteudo {
+					background-color: #dcdcdc;
+					height: 600px;
+					display: flex; /*Fica um ao lado do outro FLEX*/
+					/**row linha padrão/ row-reverse inverte a ordem/ column / column-reverse inverte a ordem**//*
+					flex-direction: row; /*efeito como se o item tivesse flutuando um ao lado do outro*//*definir a direção*/
+
+					/*nowrap aperta os itens/ wrap quebra / wrap-reverse*//*
+					flex-wrap: nowrap;  /*quebra de layout, definindo uma largura menor o flex apertará os itens para caber dentro da caixa*/ /*agrupar os itens*/
+
+					/*flex-start padrão / flex-end conteudo final no canto superior direito / center / space-between adiciona espaçamento entre eles / space-around adiciona espaçamento entre eles, porém não ficam na extremidade*//*
+					justify-content: space-around; /*usar para alinhar itens verticalmente*/
+
+					/*stretch padrão / center / flex-start itens na parte superior/ flex-end itens na parte inferior/ baseline alinha pela parte superior do texto*//*
+					align-items: baseline;  /*Centraliza as linhas*/
+				}
+
+
+
+				.item {
+					width: 100px;
+					height: 100px;
+					
+					background: white;
+					border: 1px solid red;
+					flex-grow: 0;  /*define proporção de espaço ocupado por um item diminuindo o tamanho do navegador ele também irá diminuir. 0 padrão 1 aumenta. AUMENTO*/
+
+					flex-shrink:1;  /*define a capacidade de redução de tamanho do item REDUÇÃO-encolher ao encolher o tamanho da navegação o item reduzirá*/
+
+					flex-basis: auto;/*indica o tamanho inicial do flex item antes da distribuição do espaço restante. padrão auto*/
+				}
+				/*
+
+				.ordem1 {
+					order: 1;
+				}
+
+
+				.ordem2{
+					order: 2;
+				}
+
+				.ordem3 {
+					order: 3;
+				}
+
+				.ordem4 {
+					order: 4;
+				}
+
+				.ordem {
+					order: -1;
+				}
+
+					/*Por padrão todos os elementos são 0*/
+
+
+
+
+			</style>
+		</head>
+		<body>
+
+			<h1>Flexbox</h1>
+
+
+
+			<div id="conteudo"> <!--Chamado de container, pois contém todos os conteúdos-->
+				<div class="item item1">01</div>
+				<div class="item ">02</div>
+				<div class="item item2">03</div>
+				<div class="item ">04</div>
+				
+
+			</div>
+
+		</body>
+</html>
