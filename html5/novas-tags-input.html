@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Novas tags de input html5</title>
+		<meta charset="utf-8">
+
+		<!--Estilo Customizado-->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+	</head>
+	<body>
+
+		<form>
+			<!--Nome-->
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome" required autofocus>
+			<br>
+			<br>
+
+			<!--Email-->
+			<!--Para validar usa required-->
+			<!--o foco ficará no nome que falta digitar-->
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required>
+			<br>
+			<br>
+
+			<!--Número-->
+			<!--step ir de x em x por exemplo 5-->
+			<label for="numero">Número</label>
+			<input type="number" name="" min="1" max="20" step="5">
+			<br>
+			<br>
+
+			<!--URL-->
+			<label for="url">URL</label>
+			<input type="url" name="" id="url" placeholder="ex:http://www...">
+			<br>
+			<br>
+
+			<!--pesquisa -->
+			<label for="pesquisa">Pesquisa</label>
+			<input type="search" name="" id="pesquisa">
+
+			<br>
+			<br>
+
+			<!--Range é um marcador que consegue arrastar para um lado e outro
+				pode definir um valor fixo value-->
+			<label for="range">Range</label>
+			<input type="range" name="" id="range" min="1" max="20" value="2">
+			<br>
+			<br>
+
+			<!--Data-->
+			<label for="data">Data</label>
+			<input type="date" name="" id="data">
+			<br>
+			<br>
+
+			<!--Cor-->
+			<label for="cor">Cor</label>
+			<input type="color" name="" id="cor">
+			<br>
+			<br>
+
+
+			<!--submit pois quer enviar o formulario-->
+			<input type="submit" name="" value="enviar"> 
+
+		</form>
+
+	</body>
+</html>
