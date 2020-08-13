@@ -27,18 +27,45 @@
 	height: 300px;
 	background-color: #b9c941;
 	margin: 10px;*/
-
+/*
 	#caixa {
 		width: 300px;
 		height: 300px;/*
-		background: url("../imagens/camera.png");*/
+		background: url("../imagens/camera.png");*//*
 		background: linear-gradient(to bottom, purple, pink, green, yellow);  
 		/*gradiente começa uma cor e termina em outra*//*
-		background: radial-gradient(red, green);/*gradiente radial fica um circulo*/
+		background: radial-gradient(red, green);/*gradiente radial fica um circulo*//*
 	}
 
 	#caixa h1 {/*
-		background: rgb(255,255,255);  /*definir cores rgb */
-		background: rgba(255,255,255,1);  /*define transparencia */
+		background: rgb(255,255,255);  /*definir cores rgb *//*
+		background: rgba(255,255,255,1);  /*define transparencia *//*
 
 	}
+*/
+
+	#caixa {
+		width: 300px;
+		height: 300px;
+		padding: 8px;
+		margin: 20px;
+		background: #009670;
+		box-shadow: 40px 200px 20px 20px pink; /*aplica a sombra em uma caixa, na div, 
+		pode aplicar mais um parâmetro efeito borrado o tamanho nao muda
+		 e o quarto parametro é o spread a sombra espalha, ou seja, aumenta de tamanho*/
+	
+	}
+
+	#caixa h1 {
+		color: white;/*
+		text-shadow: 2px 20px red; /*Aplica uma sombra em um texto.
+		O primeiro parâmetro movimenta a sombra na horizontal e o segundo na vertical,
+		 funciona como efeito de fundo um background, numeros positivos p direita negativos pra esquerda
+		 positivo pra cima negativo pra baixo*/
+		 text-shadow: 20px 20px 20px; rgba(0,0,0,0.5); 
+		 /*pode colocar um blurred que deixa borrado que é o terceiro parâmetro*/
+
+	}
+
+
+
