@@ -1,0 +1,71 @@
+/*Estrutura padrão do site
+*************************************************************************************/
+
+
+/*repeat-x a imagem irá aparece somente na horizontal cobrindo só a parte superior*/
+body {
+	background: #f4f2ec url(../img/fundo.png) repeat-x;
+	font: 12px "lucida grande", "lucida sans unicode", arial, sans-serif;
+}
+
+#container {
+	width: 1080px; /*Padrão utilizado para tamanho de vídeos*/
+	margin: 0 auto; /*Centralizar*/
+	border: 1px solid blue;
+}
+
+
+a:link, a:active, a:visited {
+	color: #af670a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #227115;
+}
+
+/*LOGO 
+************************************************************************************/
+/*Colocar a mesma altura e largura da imagem que for pôr*/
+
+#logo a {
+	width: 248px;
+	height: 21px;
+	text-indent: -9999px; /*Para tirar o texto da área visível e ficar o logo da img*/
+	display: block; /*Para se comportar como bloco*/
+	background: url(../img/logo.png) no-repeat;
+
+}
+
+/*Barra de navegação
+**********************************************************************************/
+
+header {
+	padding: 15px 0;
+	height: 55px;
+
+}
+
+nav ul {
+	list-style: none;
+	margin: 20px;
+	float: right; /*Flutuando para a direita*/
+
+
+}
+
+nav ul li {
+	float: left; /*Flutuando a direita e um do lado do outro*/
+}
+
+
+nav ul li a:link {
+	display: block;
+	margin-right: 25px;
+	padding-bottom: 3px;
+	text-transform: uppercase; /*maiusculo*/
+}
+
+nav ul li a:hover{
+	border-bottom: 1px solid #535858; /*Borda inferior ao passar o mouse no link*/
+}
