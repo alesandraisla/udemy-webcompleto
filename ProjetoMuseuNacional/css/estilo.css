@@ -210,7 +210,8 @@ código fora do div principal e container*/
 
 
 footer {
-	clear: both;/*Quando usa o clear both no elemento aí a margin nao funciona. a margem superior cola na margin inferior
+	clear: both;/*Quando usa o clear both no elemento aí a margin nao funciona.
+	 a margem superior cola na margin inferior
 	 margin-colapse então precisa colocar a margin no conteudo e no aside*/
 	padding: 20px 0 30px 0;
 	text-align: center;
