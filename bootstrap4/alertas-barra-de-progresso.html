@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+
+    <title>Bootstrap - Alertas e barra de progresso</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px">
+
+
+      <h2>Alertas</h2>
+      <div class="alert alert-primary">
+        <strong>Primary</strong> Você tem uma postagem pendente!
+      </div>
+      <br>
+      <div class="alert alert-secondary">
+        <strong>Primary</strong> Você tem uma postagem pendente!
+      </div>
+       <br>
+      <div class="alert alert-success">
+        <strong>Primary</strong> Você tem uma postagem pendente!
+      </div>
+       <br>
+      <div class="alert alert-warning">
+        <strong>Primary</strong> Você tem uma postagem pendente!
+      </div>
+       <br>
+      <div class="alert alert-info">
+        <strong>Primary</strong> Você tem uma postagem pendente!
+      </div>
+       <br>
+      <div class="alert alert-danger">
+        <strong>Primary</strong> Você tem uma postagem pendente!
+      </div>
+       <br>
+      <div class="alert alert-light">
+        <strong>Primary</strong> Você tem uma postagem pendente!
+      </div>
+       <br>
+      <div class="alert alert-dark">
+        <strong>Primary</strong> Você tem uma postagem pendente!
+      </div>
+
+
+
+      
+      <h2>Alerta com botão fechar</h2>
+      <!-- &times;  -> cria o simbolo ×  
+        Para fechar o alerta alert-dismissible /  data-dismiss="alert"--> 
+
+      <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">
+              &times;
+            </button>
+            <strong> Fechar</strong> Alerta com botão fechar
+      </div>
+      
+
+
+      <h2>Alerta com mais conteúdos</h2>
+      <div class="alert alert-dark">
+      <h4>Título</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur tortor faucibus sed. </p>
+      <hr>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur tortor faucibus sed.</p>
+
+
+      </div>
+      <br><br>
+
+
+
+      <h2>Barra de progresso</h2>
+      <!--Para carregar algo, foto. Carregando para que o usuário acompanhe o processo do que está
+        esperando.
+        progress -> aplica um fundo cinza
+        progress-bar w-valor ou colocar um style com o width tbm funciona -> aparece a cor
+      -->
+
+        <div class="progress">
+          <div class="progress-bar" style="width: 45%">45%</div>
+        </div>
+        <br>
+
+         <div class="progress">
+          <div class="progress-bar bg-success" style="width: 40%">40%</div>
+        </div>
+        <br>
+
+      <h2>Altura</h2>
+
+      <div class="progress" style="height: 5px;">
+          <div class="progress-bar bg-danger" style="width: 40%"></div>
+        </div>
+        <br>
+
+      <h2>Listrado</h2>
+
+      <div class="progress">
+          <div class="progress-bar bg-warning progress-bar-striped" style="width: 70%">70%</div>
+        </div>
+        <br>
+
+
+
+
+
+      <h2>Animado</h2>
+
+        <div class="progress">
+          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+        </div>
+        <br>
+
+
+      <h2>Múltiplas barras</h2>
+
+      <div class="progress">
+        <div class="progress-bar bg-info" style="width: 50%">Painel principal (50% de 50%)</div>
+        <div class="progress-bar bg-danger" style="width: 60%">Fotos (30% de 30%)</div>  
+        <div class="progress-bar bg-success" style="width: 60%">Configurações (15% de 20%)</div>        
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

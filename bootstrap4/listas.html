@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+
+    <title>Bootstrap - listas</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px">
+
+
+<!--Listas 
+com bordas no canto arredondado
+Class active ficará com cor azul e mostrara ao usuário que o link está ativo -->
+
+<ul class="list-group">
+    <li class="list-group-item active">Meu item de lista 1</li>
+    <li class="list-group-item">Meu item de lista 2</li>
+    <li class="list-group-item">Meu item de lista 3</li>
+    <li class="list-group-item">Meu item de lista 4</li>
+  </ul>
+
+  <br>
+  <br>
+
+<!--Listas com classe flush (mais simples)
+  sem borda superior e nem inferior e lateral
+-->
+
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">Meu item de lista 1</li>
+    <li class="list-group-item">Meu item de lista 2</li>
+    <li class="list-group-item">Meu item de lista 3</li>
+    <li class="list-group-item active">Meu item de lista 4</li>
+  </ul>
+  
+  <br>
+  <br>
+
+<!--Lista com links-->
+<ul class="list-group">
+
+    <a href="" class="list-group-item">Meu item de lista 1 </a>
+    <a href="" class="list-group-item active"> Meu item de lista 2 </a>
+    <a href="" class="list-group-item"> Meu item de lista 3 </a>
+    <a href="" class="list-group-item"> Meu item de lista 4 </a>
+  </ul>
+  <br><br>
+
+<!--Listas com classes contextuais
+  classe: list-group-item-<opcoes>
+    opções: primary secondarey, success, info, warning, danger, light, dark. -->
+ 
+ <ul class="list-group">
+    <li class="list-group-item">Lista normal</li>
+    <li class="list-group-item list-group-item-primary">Lista primary</li>
+    <li class="list-group-item list-group-item-secondary">Lista secondary</li>
+    <li class="list-group-item list-group-item-success">Lista success</li>
+    <li class="list-group-item list-group-intem-info">Lista info</li>
+    <li class="list-group-item list-group-item-warning">Lista warning</li>
+    <li class="list-group-item list-group-item-danger">Lista danger</li>
+    <li class="list-group-item list-group-item-light">Lista light</li>
+    <li class="list-group-item list-group-item-dark">Lista dark</li>
+
+</ul>
+
+
+<!-- Badge
+  Utilizado em e-mails
+  ClassE: badge-<opcoes>
+    opções: primary, secondary, success, info, warning, danger, light, dark-->
+
+<ul class="list-group">
+    <li class="list-group-item">Meu item de lista 1</li>
+    <li class="list-group-item">
+        Itens enviados
+        <span class="badge badge-warning"> 5
+          
+        </span>
+    </li>
+    <li class="list-group-item">
+      Caixa Entrada
+      <span class="badge badge-primary">120</span>
+
+    </li>
+    <li class="list-group-item">Meu item de lista 4</li>
+</ul>
+<br>
+<br>
+
+<!--Breadcrumb (migalhas de pão) - fica com background cinza e arredondamento.
+  Usada para identificar o local que o usuário está.
+-->
+
+<!--Quando o usuário está na página-->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"> Home  </li>
+</ol>
+
+<!--Quando não está na página-->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="">Home</a>
+  </li>
+  <li class="breadcrumb-item active">Notícias</li>
+</ol>
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="">Home</a>
+  </li>
+
+  <li class="breadcrumb-item">
+    <a href="">Usuários</a>
+  </li>
+
+  <li class="breadcrumb-item">
+    Jamilton Damasceno
+  </li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
