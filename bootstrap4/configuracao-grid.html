@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Iconic CSS -->
+    <link href="iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+    <!--Fontawesome CSS-->
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+
+
+      <style type="text/css">
+
+          .marcador {
+            background: #fe9d9d;
+            border: 1px solid #f94646;
+          }
+
+          .marcador-container {
+            background: #5bf946;
+            border: 1px solid #36ae26;
+          }
+
+      </style>
+
+    <title>Bootstrap- Configurações grid</title>
+  </head>
+
+
+  <body>
+<!--
+Dentro do container que vai ficar todos os conteudos. utilizado para agrupar todos os conteudos.
+  Quando trabalha com sistemas de gris é dentro da row que fica todas as 12 colunas.
+  container-fluid (ocupa todo espaçamento da tela)
+  coitainer (centraliza)
+  maneira de definir uma largura fixa para todas as divs -> col
+
+-->
+
+<!--Somente com o col todas as colunas ficarão com a mesma largura-->
+<div class="container marcador-container">
+      <h2>Largura fixa</h2>
+      <div class="row" style="border: 1px solid red">
+        <div class="marcador col">área 1</div>
+        <div class="marcador col">área 2</div>
+        <div class="marcador col">área 3</div>
+        <div class="marcador col">área 4</div>
+      </div>
+
+
+<!--Desvantagem não se ajusta de acordo com o tamanho do dispositivo-->
+      <h2>Largura automática (auto-layout)</h2>
+      <div class="row">
+        <div class="marcador col-4">área 1</div>
+        <div class="marcador col-6">área 2</div>
+        <div class="marcador col">área 3</div>
+      </div>
+
+
+
+
+<!--Ao reduzir o dispotivo para small fica um abaixo do outro, ou seja, empilhado-->
+      <h2>Largura igual empilhada</h2>
+      <div class="row">
+        <div class="marcador col-sm">área 1</div>
+        <div class="marcador col-sm">área 2</div>
+        <div class="marcador col-sm">área 3</div>
+      </div>
+
+
+
+<!--
+Ordem das colunas
+colocar apenas order-numero da ordem
+-->
+      <h2>Ordenando</h2>
+      <div class="row">
+        <div class="marcador col-md-4 order-2">área 1</div>
+        <div class="marcador col-md-4 order-1">área 2</div>
+        <div class="marcador col-md-4 order-3">área 3</div>
+      </div>
+
+
+<!--
+  offset (espaçamentos entre os elementos)
+  offset-<tamanhododispositivo>-<quantascolunaspulará> -->
+
+      <h2>offset</h2>
+      <div class="row">
+        <div class="marcador col-md-6 offset-md-3">Login</div>
+      </div>
+
+
+
+
+      <h2>offset múltiplos alinhamentos</h2>
+      <div class="row">
+        <div class="marcador col-md-3">Conteúdo 1</div>
+        <div class="marcador col-md-3 offset-md-6">Conteúdo 2</div>
+       
+      </div>
+
+<!--Dentro de uma row pode criar mais row-->
+      <h2>Aninhamento</h2>
+      <div class="row">
+        <div class="col-md-6" style="border:1px solid blue">
+          Col-md-6
+          <div class="row">
+            <div class="col-md-6 marcador">
+              Conteudo 1
+            </div>
+          </div>
+
+          
+        </div>
+        
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
