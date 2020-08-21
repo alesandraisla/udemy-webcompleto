@@ -1,0 +1,11 @@
+/*Layout
+combinação de background imagem capa está com opacidade
+degradê -> linear-gradient (deg graus)
+background-attachment: fixed deixará ele parado mesmo descendo na barra de rolagem*/
+body {
+	background: url(../imagens/capa.png),
+				url(../imagens/ruido.png),
+				linear-gradient(50deg,#ff4169, #7c26f8);
+				background-attachment:fixed;
+					
+}
