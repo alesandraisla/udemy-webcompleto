@@ -26,7 +26,7 @@
 
     <header><!--Início cabeçalho -->
 
-      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-primary">
+      <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
         <div class="container">
 
           <a href="index.html" class="navbar-brand"><!--Logo-->
@@ -41,12 +41,15 @@
           <div class="collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav ml-auto"><!--Colocar menu a direita ml-auto-->
               <li class="nav-item">
-                <a href="" class="nav-link">Premiun</a></li>
+                <a href="" class="nav-link">Premium</a></li>
               <li class="nav-item">
                 <a href="" class="nav-link">Ajuda</a></li>
               <li class="nav-item">
                 <a href="" class="nav-link">Baixar</a></li>
               <li class="nav-item">
+
+                <li class="nav-item divisor"></li>  <!--divisor -->
+
                 <a href="" class="nav-link">Inscrever-se</a></li>
               <li class="nav-item">
                 <a href="" class="btn btn-outline-light ml-4">Entrar</a></li>
@@ -60,9 +63,196 @@
 
     </header><!--Fim cabeçalho -->
 
+    <!--Para o texto poder ficar no centro do site usou o d-flex + align-self-center -->
+
+    <section id="home" class="d-flex"><!--Home-->
+      <div class="container align-self-center"><!--Container-->
+        <div class="row"><!--Row-->
+          <div class="col-md-12 capa" ><!--Col-->
+            
+            <div id="carousel-spotify" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <h1>Música para todos</h1>
+                        <a href="" class="btn btn-lg btn-custom btn-roxo">
+                          Aproveite o aplicativo free
+                        </a>
+                        <a href="" class="btn btn-lg btn-custom btn-branco">Obter o aplicativo premium</a>          
+                </div>
+
+                  <div class="carousel-item">
+                  <h1>As melhores rádios</h1>
+                        
+                        <a href="" class="btn btn-lg btn-custom btn-branco"><i class="fas fa-music">Ouça agora</i></a>          
+                </div>
+
+
+                
+              </div>
+
+              <!--controles-->
+              <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
+                <i class="fas fa-angle-left fa-3x"></i>
+              </a>
+
+              <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
+                <i class="fas fa-angle-right fa-3x"></i>
+              </a>
+              
+
+            </div>
 
 
 
+
+          </div><!--Col-->
+          
+        </div><!--Row-->
+      </div><!--Container-->
+    </section><!--Home-->
+
+    <section id="servicos"><!--Serviços-->
+      <div class="container"><!--Container-->
+        <div class="row"><!--row-->
+          <div class="col-md-6"><!--col-->
+            <div class="row albuns"><!--Inicio row -->
+              <div class="col-md-6">
+              <img src="imagens/img1.jpg" class="img-fluid d-none d-md-block">
+            </div>
+            <div class="col-md-6">
+              <img src="imagens/img2.jpg" class="img-fluid d-none d-md-block">
+            </div>
+            </div><!--Fim row-->
+            <div class="row">
+              <div class="col-md-6">
+                <img src="imagens/img3.jpg" class="img-fluid d-none d-md-block">
+              </div>
+              <div class="col-md-6">
+                <img src="imagens/img4.jpg" class="img-fluid d-none d-md-block">
+             </div>
+            </div>
+          </div><!--Fim col-->
+          <div class="col-md-6"><!--col-->
+            <h2>O que o aplicativo tem ?</h2>
+
+            <h3>Músicas</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+
+            <h3>Playlists</h3>
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+
+            <h3>Novos lançamentos</h3>
+            <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            
+          </div><!-- fim col-->
+          
+        </div><!--fim row-->
+      </div><!--fim contianer-->
+
+      
+
+    </section><!--Fim serviços-->
+
+
+    <section id="recursos"><!--Recursos -->
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-4">
+
+            <h2>Fácil</h2>
+            <h3>Buscar</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+            <h3>Navegar</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+            <h3>Descobrir</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+          </div>
+
+<!--rotacionar a iamgem -->
+          <div class="col col-md-8">
+            <div class="row rotacionar">
+              <div class="col col-md-6">
+                <img src="imagens/iphone1.png" class="img-fluid">
+              </div>
+              <div class="col col-md-6">
+                <img src="imagens/iphone2.png" class="img-fluid">
+              </div>
+              
+            </div>
+            
+
+
+
+          </div>
+          
+
+
+
+        </div>
+        
+
+      </div>
+      
+
+    </section><!--Fim recursos -->
+
+
+
+<footer><!--Rodapoe -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="imagens/spotify.svg" width="142">
+      </div>
+      <div class="col-md-2">
+        <h4>COMPANY  </h4>
+        <ul class="navbar-nav">
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Empregos</a></li>
+          <li><a href="">Imprensa</a></li>
+          <li><a href="">Novidades</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h4>COMUNIDADES  </h4>
+        <ul class="navbar-nav">
+        <li><a href="">Artistas</a></li> 
+        <li><a href="">Desenvolvedores</a></li>
+        <li><a href="">Marcas</a></li>
+      </ul>
+      </div>
+      <div class="col-md-2">
+        <h4>LINKS UTEIS</h4>
+        <ul class="navbar-nav">
+          <li><a href="">Ajuda</a></li>
+          <li><a href="">Presentes</a></li>
+          <li><a href="">Player da web</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul>
+          <li>
+            <a href=""><img src="imagens/facebook.png"></a>
+          </li>
+          <li>
+            <a href=""><img src="imagens/twitter.png"></a>
+          </li>
+          <li>
+            <a href=""><img src="imagens/instagram.png"></a>
+          </li>
+        </ul>
+
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+</footer><!--Rodape-->
 
 
 
