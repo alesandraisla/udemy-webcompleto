@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Desafio 1</title>
+		<script>
+
+			var a = 10;
+			var b = 20;
+			var c = null; //variável auxiliar utilizada na lógica//
+
+
+
+			document.write('A: '+ a + ' <br />');
+			document.write('B: '+ b + '<br />');
+			document.write('C: '+ c + ' <br />');
+
+
+
+			document.write('<hr />')
+
+			// lógica de inversão dos valores das variáveis A e B 
+
+			c = a // utilizada a variável c para armazenar A com o valor da variável B
+			a = b // sobrepõe o valor da variável A com o valor da variável B
+			b = c // sobrepoe o valor da variável B com o valor da variável C (C nesse momento contém o valor da variável A)
+			c = null // opacional: remove o valor contido na variável c
+
+			//
+
+			document.write('A: ' + a + ' <br />');
+			document.write('B: ' + b + ' <br />');
+			document.write('C ' + c + ' <br />');
+			
+
+
+
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>

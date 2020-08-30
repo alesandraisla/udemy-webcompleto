@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-7=8">
+		<title>Concatenação</title>
+
+		<script>
+			var nome = localStorage.getItem('nome', nome) || "NADA";
+			var idade = localStorage.getItem('idade', idade) || 0;
+
+			document.write('Salvo ' + nome +', ' + idade + ' anos.</h1>')
+
+			setTimeout(() => {
+				var nome = prompt('Digite o seu nome:')
+				var idade = prompt('Digite a sua idade:')
+
+				if (nome) localStorage.setItem('nome', nome);
+				if (idade) localStorage.setItem('idade', idade);
+
+				nome = localStorage.getItem('nome', nome) || "NADA";
+				idade = localStorage.getItem('idade', idade) || 0;
+				
+				document.write('<h1>Olá ' + nome +', tudo bem ? Estou vendo aqui que você possui ' + idade + ' anos.</h1>')
+
+			}, 3000);
+		</script>
+
+	</head>
+	<body>
+
+
+	</body>
+</html>
