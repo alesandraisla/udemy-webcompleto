@@ -21,12 +21,19 @@
 		/*Variáveis da aplicação*/
 		var media = 7;
 		var faltas_maximas = 15;
-
+		/*
 		if (nota >= media && faltas <= faltas_maximas) {
 			document.write('Aprovado');
 		} else {
 			document.write('Reprovado');
-		}
+		}*/
+
+		//var resultado = <condicao> ? <verdadeiro> : <falso>
+		// operadores tenários não tem a  liberdade de implementar lógicas dentro no if e else que faça coisa complexa, tem uma sintaxe mais enxuta. 
+
+		var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado';
+
+		document.write(resultado)
 
 
 
