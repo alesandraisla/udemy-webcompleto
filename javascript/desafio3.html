@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Desafio 3</title>
+		<meta charset="utf-8">
+		<script>
+			var nome = prompt('Escreva o seu nome:');
+			var alturaEmCentimetros = prompt('Informe altura em centímetros(ex 190cm):');
+			var pesoEmKilogramas = prompt('Informe seu peso (ex 80kg):');
+
+			alturaEmCentimetros = parseFloat (alturaEmCentimetros);
+			pesoEmKilogramas = parseFloat (pesoEmKilogramas);
+
+			if (alturaEmCentimetros < 1 || alturaEmCentimetros > 1000) {
+				alert('Altura incorreta. A altura tem que está entre 1 e 1000!')
+			}
+
+			if (pesoEmKilogramas < 1 || pesoEmKilogramas > 1000) {
+				alert('Peso incorreto. Peso tem que está entre 1 e 1000!')
+			}
+
+			var alturaEmMetros = alturaEmCentimetros / 100;
+
+			//var indiceDeMassaCorporea = pesoEmKilogramas / Math.pow(alturaEmMetros, 2);
+			var indiceDeMassaCorporea = pesoEmKilogramas / (alturaEmMetros * alturaEmMetros);
+
+			if (indiceDeMassaCorporea < 16) {
+				alert('Baixo peso muito grave');
+			} else if ( indiceDeMassaCorporea >= 16 && indiceDeMassaCorporea <= 16.99) {
+				alert('Baixo peso grave');
+			} else if ( indiceDeMassaCorporea >= 17 && indiceDeMassaCorporea <= 18.49) {
+				alert('Baixo peso');
+			} else if ( indiceDeMassaCorporea >= 18.50 && indiceDeMassaCorporea <= 24.99) {
+				alert('Peso normal');
+			} else if (indiceDeMassaCorporea >= 25 && indiceDeMassaCorporea <= 29.99) {
+				alert('Sobrepeso');
+			} else if (indiceDeMassaCorporea >= 30 && indiceDeMassaCorporea <= 34.99) {
+				alert('Obesidade grau I');
+			} else if (indiceDeMassaCorporea >= 35 && indiceDeMassaCorporea <= 39.99) {
+				alert('Obesidade grau II');
+			} else {
+				alert('Obesidade grau III');
+			}
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
