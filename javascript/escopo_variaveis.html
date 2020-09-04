@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Escopo</title>
+		<meta charset="utf-8">
+
+		<script>
+			//3 Escopos: global , função e bloco (comandos)
+
+			var desenho = 'Digimon';
+
+			// escopo de bloco 
+
+			if (true) {
+				var desenho2 = 'Pokemon';
+				document.write(desenho) ;
+			}
+
+			document.write('<br />')
+			document.write(desenho2);
+
+			// escopo função
+
+			function x () {
+				var desenho3 = 'As três espiães';
+				document.write(desenho);
+				document.write(desenho2);
+			}
+
+			x ()
+
+			document.write('<br/>');
+			document.write(desenho3);
+
+			
+
+
+
+		</script>
+
+
+	</head>
+	<body>
+
+	</body>
+</html>
