@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Funções CallBack</title>
+		<meta charset="utf-8">
+		<script>
+			
+			function exibirArtigo(id, callbackSucesso, callbackErro) {
+				// lógica reguprar o id via requisição javascript
+				if ( true ) {
+					callbackSucesso('Funções de callback em JS', 'Funções de CallBack são muito utilizadas');	
+				} else {
+					callbackErro ('Erro ao recuperar os dados');
+				}
+			}
+
+			 var callbackSucesso = function(titulo, descricao) {
+			 	document.write('<h1>' + titulo + '</h1>');
+			 	document.write('<hr>');
+			 	document.write('<p>' + descricao + '</p>');
+			 }
+
+
+			 var callbackErro = function(erro) {
+			 	document.write('<p><b> Erro: </b>' + erro + '</p>');
+
+			 }
+
+
+			exibirArtigo(1, callbackSucesso, callbackErro);
+
+
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
