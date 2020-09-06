@@ -6,7 +6,7 @@
 		<script>
 			
 			function exibirArtigo(id, callbackSucesso, callbackErro) {
-				// lógica reguprar o id via requisição javascript
+				
 				if ( true ) {
 					callbackSucesso('Funções de callback em JS', 'Funções de CallBack são muito utilizadas');	
 				} else {
@@ -15,6 +15,7 @@
 			}
 
 			 var callbackSucesso = function(titulo, descricao) {
+			 	//impressão de instruções
 			 	document.write('<h1>' + titulo + '</h1>');
 			 	document.write('<hr>');
 			 	document.write('<p>' + descricao + '</p>');
@@ -22,6 +23,7 @@
 
 
 			 var callbackErro = function(erro) {
+			 	//impressão de instruções
 			 	document.write('<p><b> Erro: </b>' + erro + '</p>');
 
 			 }
