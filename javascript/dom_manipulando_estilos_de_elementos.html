@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Dom - Manipulando estilos de elementos</title>
+	<meta charset="utf-8">
+<script>
+
+//Disparo
+	function modificaEstilo(corDeFundo, l, a) {
+		document.getElementById('quadrado').style.backgroundColor = corDeFundo // acessar os atributos css
+		document.getElementById('quadrado').style.width = l
+		document.getElementByID('quadrado').style.height = a
+	}
+	
+</script>
+
+</head>
+<body>
+	<h3>Manipulando estilo</h3>
+
+	<!--Envio do parâmetro-->
+	<button type="button" onclick="modificaEstilo('#FF0000', '200px')">Vermelho</button>
+	<button type="button" onclick="modificaEstilo('#00FF00', '150px', '20px')">Verde</button>
+	<button type="button" onclick="modificaEstilo('#0000FF', '250px', '300px')">Azul</button>
+
+	<hr>
+
+	<div style="border: solid 4px black; width: 100px; height: 100px" id="quadrado">
+		
+	</div>
+
+</body>
+</html>
