@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Desafio 4 gabarito</title>
+	<meta charset="utf-8">
+	<script>
+		var numero_1 = prompt('Digite o primeiro número');
+		var operacao = prompt('Digite a operação');
+		var numero_2 = prompt('Digite o segundo número');
+
+		function calculo(numero_1,numero_2,operacao) {
+
+			numero_1 = parseFloat(numero_1);
+			numero_2 = parseFloat(numero_2);
+
+			var resultado = 0;
+
+			if (operacao == '+'){
+				resultado = numero_1+numero_2;
+			} else if (operacao =='-'){
+				resultado = numero_1-numero_2;
+			} else {
+				alert('Digite uma operação válida!')
+			}
+
+			return resultado;
+
+		}
+
+		document.write('O resultado é:' + calculo(numero_1, numero_2, operacao))
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

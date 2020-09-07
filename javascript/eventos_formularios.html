@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Eventos formulários</title>
+	<meta charset="utf-8">
+	<script></script>
+</head>
+<body>
+
+	<!--
+	onfocus
+		<input onfocus="console.log('Estado acionado')" type="text"/> -->
+
+	<!--
+	onblur
+	<input onblur="console.log('Perdeu o foco')" type="text"/> -->
+
+	<!--
+	onchange
+	<input onchange="console.log('Estado modificado')" type="text" />-->
+
+	<input onfocus="console.log('Estado acionado')" onblur="console.log('Perdeu o foco')" type="text" />
+
+	<select onchange="console.log('Estado foi modificado')">
+		
+		<option>-- Selecione --</option>
+		<option >Primeira opção</option>
+		<option value="2">Segunda opção</option>
+	</select>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Desafio 4</title>
+<meta charset="utf-8">
+<script>
+
+	var primeira_entrada = prompt('digite o primeiro numero');
+	var operacao = prompt('digite a operacao');
+	var segunda_entrada = prompt('digite o segundo numero');
+
+
+	primeira_entrada = parseFloat (primeira_entrada);
+	segunda_entrada = parseFloat (segunda_entrada);
+
+
+
+
+	function calculo() {
+		if (operacao == '+'){
+			return callbackSoma(primeira_entrada,segunda_entrada)
+		}else if(operacao == '-') {
+			return callbackSubtracao(primeira_entrada,segunda_entrada)
+		}else {
+			alert('Digite uma operação válida')
+		}
+	}
+
+	function callbackSoma(){
+		return resultado = primeira_entrada+segunda_entrada
+	}
+
+	function callbackSubtracao (){
+		return resultado = primeira_entrada-segunda_entrada
+	}
+
+	
+
+
+	document.write('O resultado é:' + calculo(primeira_entrada,segunda_entrada,operacao));
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
