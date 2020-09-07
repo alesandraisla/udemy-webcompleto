@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Dom - Manipulando valores inputs text</title>
+	<meta charset="utf-8">
+	<script>
+		
+function distribuiCaracter() {
+	// selecionar o valor digitado. 
+	//atributo value recupera o valor contido dentro do elemento
+	var caracter = document.getElementById('entrada').value
+	// limpar o campo de digitação
+	document.getElementById('entrada').value = ''
+
+	//limpar espaços em branco nas extremidades da string
+	caracter.trim()
+
+	console.log(caracter)
+
+	switch(caracter) {
+		case '0':
+		case '1':
+		case '2':
+		case '3':
+		case '4':
+		case '5':
+		case '6':
+		case '7':
+		case '8':
+		case '9':
+			// adicionar o caracter no campo referente a números
+			document.getElementById('apenas_numeros').value += caracter
+			break;
+		default:
+			// adicionar o caracter no campo referente a letras	
+			document.getElementById('apenas_letras').value += caracter	
+	}
+}
+
+
+
+
+
+
+
+
+
+	</script>
+
+</head>
+<body>
+	<input 
+	type="text" 
+	placeholder="Digite um caractere aqui" 
+	onkeydown="distribuiCaracter()"
+	id="entrada">
+
+	<hr>
+
+<!--Recuperar a partir do campo um caracter e tomar uma decisao pra saber se é uma letra ou numero-->
+
+	<span>Letras:</span>
+	<input type="text" disabled="disabled" id="apenas_letras">
+
+	<span>Números:</span>
+	<input type="text" disabled="disabled" id="apenas_numeros"> <!-- disabled desabilitar Evitar que o usuário faça entrada de dados -->
+
+</body>
+</html>
