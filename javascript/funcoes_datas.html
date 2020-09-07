@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>funções Datas</title>
+<meta charset="utf-8">
+<Script>
+/*
+
+//getDate -> retorna o dia da data do SO
+//getMonth -> retorna o mês da data do SO, como contabiliza de 0 a 11 precisa acrescentar o +1
+//getFullYear -> retorna o ano da data do SO
+
+	var data = new Date();
+
+	document.write(data.getDate() + '/' + (data.getMonth()+1) + '/' + data.getFullYear())*/
+
+
+//getDay -> Retorna o dia da semana
+/*	
+	var data = new Date ();
+
+	document.write(data.getDay());  */
+
+
+//getHours -> Retorna a hora de 0 a 23
+/*
+	var data = new Date ()
+
+	document.write(data.getHours())   */
+
+//getMilliseconds -> Retorna os milissegundos de 0 a 999
+/*
+	var data = new Date ()
+
+	document.write(data.getMilliseconds())  */
+
+
+//getMinutes -> Retorna os minutos de 0 a 59
+
+/*
+	var data = new Date ()
+
+	document.write(data.getMinutes())  */
+
+
+//getSeconds -> retorna os segundos de 0 a 59
+/*
+	var data = new Date ()
+
+	document.write(data.getSeconds())  */
+
+
+//getTime - retorna numero em millisegundos desde 1970
+/*
+	var data = new Date ()
+
+	document.write(data.getTime())  */
+
+
+//getTimezoneOffset -> retorna diferença de tempo entre a hora UTC e local em minutos
+/*
+	var data = new Date ()
+
+	document.write(data.getTimezoneOffset())  */
+/*
+
+	var data = new Date ();
+
+	// adicionar ou remover dias 
+	// toString está convertendo para string
+
+	document.write(data.toString());
+	//incluiu parâmetro configurando e depois recuperando a data
+	data.setDate(data.getDate()+1);
+	document.write('<hr>'); //conveteu novamente a data
+	document.write(data.toString());
+
+	//adicinar ou remover mes
+
+	document.write('<br> <hr>');
+	document.write(data.toString());
+	data.setMonth(data.getMonth()+1);
+	document.write('<hr>');
+	document.write(data.toString());
+
+	// adicionar ou remover ano
+
+	document.write('<br> <hr>');
+	document.write(data.toString());
+	data.setFullYear(data.getFullYear()+1);
+	document.write('<hr>');
+	document.write(data.toString());
+ */
+
+
+//15/01/2017
+//Quantos dias existe entre as duas datas?
+//23/02/2017
+var data1 = new Date (2020,0,6)
+
+var data2 = new Date (2020,5,11)
+
+document.write(data1.toString()) //para trazer a representação textual do objeto data
+document.write('<hr />')
+document.write(data2.toString())
+
+document.write('<br> <hr>')
+
+//convertar as datas para um valor calculávelo método getTime recupera a quantidade e milissegundos que existe entre as datas de 1 de janeiro de 1970 até a data em questão
+document.write(data1.getTime())
+document.write('<br>')
+document.write(data2.getTime())
+
+//encontrar a quantidade de milissegundos entre data1 e data 2
+//Math.abs -> retorna o valor absoluto de um número, ou seja, positivo
+
+document.write('<hr>')
+var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+document.write(milissegundos_entre_datas) //diferença em milisegundos de uma data para outra
+
+
+// Quantos dias esse numero representa?
+// 1 dia tem 24 hr, 
+//cada hora tem 60 minutos, 
+//cada minuto tem 60 segundos, 
+//cada segundo tem 1000 milisegundos 
+// quantos milisegundos existem em um dia?
+
+document.write('<br>')
+
+var milisegundos_por_dia = (1*24*60*60*1000)
+document.write(' 1 dia tem:' + milisegundos_por_dia  + ' milisegundos ')
+document.write('<br>')
+document.write('A diferença entre data1 e data2 é de: ' + Math.ceil(milissegundos_entre_datas / milisegundos_por_dia)+ ' dias ')
+
+
+
+
+
+
+
+</Script>
+</head>
+<body>
+
+</body>
+</html>
