@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Desafio 5</title>
+<meta charset="utf-8">
+<style>
+
+
+</style>
+
+<script>
+
+	function acionaCampo () {
+		document.getElementById('meucampo').style.backgroundColor = "yellow";
+	}
+
+
+	function validaCampo () {
+		var valorCampo = document.getElementById('meucampo').value
+
+		if(valorCampo < 3) {
+			document.getElementById('meucampo').style.background = "red"
+		} else {
+			document.getElementById('meucampo').style.background = "green"
+		}
+	}
+
+
+
+
+</script>
+</head>
+<body>
+<!--
+
+O elemento do onfocus serve para ser criada uma function e nele trazer o ID para informar a cor normal do foco.
+O elemento do onblur serve para ser criada uma nova function e nele criar uma VAR com uma
+validação e para ser incluída no parâmetro da condição If.
+
+-->
+
+<input id="meucampo" type="text" onfocus="acionaCampo()" onblur="validaCampo()">
+
+
+
+
+</body>
+</html>
