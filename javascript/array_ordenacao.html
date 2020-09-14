@@ -29,11 +29,18 @@
 
 		console.log(lista_numeros.sort(ordenaNumeros))
 
-		//padrão a, b ou x, z
+		//padrão a, b ou x, z. Ai a função irá testar a primeira posição com a segunda 
+		// valor <0 = a ordenado antes de b
+		// valor > 0 = b ordenado antes de a
+		// valores == a ordem é mantida
+		// Se tiver texto a ordenação será indefinida e terá um erro
+		// Se for numérico ou numero dentro da string esse método funcionará
+
 
 		function ordenaNumeros(a,b) {
 			return a - b
 		}
+
 
 
 

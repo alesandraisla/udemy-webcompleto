@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Whilte </title>
+	<meta charset="utf-8">
+<script>
+	/*
+	while(<condicao>) {
+		//código
+}*/
+/*
+	var x = 1
+	while (x <= 10){
+		document.write( x + '<br>')
+
+	x++
+
+	}*/
+
+
+//BREAK
+/*
+	var x = 1
+
+	document.write('inicio <br>')
+
+	while (x <= 10 ) {
+		document.write( x + '<br>')
+
+		if( x === 5) {
+			break
+		}
+
+		x++
+	}
+
+
+	document.write('fim')*/
+
+
+// como faz o incremento antes o x passa a valer 2 e pulou a impressão do 5 
+	var x = 1
+
+	document.write('inicio <br>')
+
+	while(x <= 10) {
+		
+		x++
+		if ( x === 5){
+			continue
+		}
+	//se colocar a impressão antes do document, ele incluírá o 2 e o 5 	
+	document.write( x + '<br>')
+	}
+
+document.write('fim')
+</script>
+</head>
+<body>
+
+</body>
+</html>

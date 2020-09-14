@@ -12,7 +12,7 @@
 		lista_frutas[2] = 'Morango'
 		lista_frutas[3] = 'Uva'
 
-		// pesquisa dentro do array. O retorno é sempre o indice, caso a pesquisa não retorne valor, e retorne -1 quer dizer que não existe dentro do array
+		// pesquisa dentro do array. O retorno é sempre o indice, caso a pesquisa não retorne valor, e retorne -1 quer dizer que não existe dentro do array. A pesquisa é case sensitive ou seja maiusculo é diferente de minusculo
 
 
 		//console.log(lista_frutas.indexOf('melancia'))
@@ -21,6 +21,13 @@
 			console.log('Elemento não existe')
 		} else {
 			console.log('Elemento existe e está na posição ' + lista_frutas.indexOf('Morango'))
+		}
+
+		// var auxiliar = lista_frutas.indexOf('Banana')
+		/* if (auxiliar === -1){
+			console.log('Elemento não existe')
+		} else {
+			console.log('Elemento existe e está na posição ' + auxiliar)
 		}
 
 
