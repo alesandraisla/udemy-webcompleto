@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Foreach</title>
+	<meta charset="utf-8">
+	<script>
+		var listaFuncionarios = ['Lara', 'Tidus', 'Yuna', 'Mickey']
+		console.log(listaFuncionarios)
+		document.write(listaFuncionarios[3])
+
+		//Essa function é de callback
+		// não precisa necessariamente informar os três parâmetros
+		// forEach só atua em valores numéricos inciando em 0 
+		listaFuncionarios.forEach(function(valor, indice, array) {
+			// Lógica
+			console.log('indice ' + indice + ' | valor: ' + valor )
+
+			// substituir um valor 
+			if(valor == 'Mickey'){
+				array[indice] = 'Um novo valor'
+			}
+		})
+
+		console.log(listaFuncionarios)
+		document.write(listaFuncionarios[3])
+
+		// Se a estrutura de Callback for comum, ou seja, tratar em mais de uma array, é interessante criar um var separado
+
+		var f = function(valor, indice) {
+			console.log(valor,indice)
+		}
+
+		listaFuncionarios.forEach(f)
+		outroArray.forEach(f)
+		
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
