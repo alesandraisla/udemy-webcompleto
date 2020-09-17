@@ -55,7 +55,7 @@
 			// console.log (soma(7,7,7));
 			// console.log (soma(7));
 			// console.log (soma());*/
-
+/*
 			function parimpar (n) {
 
 				if (n%2 == 0 ){
@@ -67,7 +67,19 @@
 
 			console.log(parimpar (3));
 		
+*/
+// instrução que retorna algo parecido com Array , representa um objeto que é uma variável local disponível na função
 
+		function soma(){
+			var resultado = 0 
+			for(var i in arguments){
+				//console.log(arguments[i])
+				resultado += arguments[i] //valores serão somados
+			}
+			return resultado
+		}
+
+		console.log(soma(7,5,3.2 + ' Texto '))
 
 
 		</script>
