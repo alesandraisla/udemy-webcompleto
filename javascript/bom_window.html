@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Bom - window</title>
+	<meta charset="utf-8">
+	<script>
+
+
+			var janela
+
+			function abrirPoup() {
+				janela = window.open('http://www.google.com', 'nova_janela', 'width=200, height=100') // 4 parâmetros opcionais URL, name, scpecs, replace
+			}
+
+			function fecharPoup (){
+				janela.close() 
+			}
+
+
+	</script>
+</head>
+<body>
+
+	<button onclick="abrirPoup()">Abrir Janela</button>
+	<button onclick="fecharPoup()">Fechar Janela</button>
+	<button onclick="window.print()">Imprimir página</button>
+
+</body>
+</html>

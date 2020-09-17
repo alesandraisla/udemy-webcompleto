@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Tratamento de erros</title>
+	<meta charset="utf-8">
+	<script>
+
+
+		//netflix
+		var video = Array()
+
+		 video [1] = Array ()
+		 video [1] ['nome'] = ' Naturo '
+		 video [1] ['categoria'] = ' Anime '
+
+		 function getVideo(video) {
+		 	//lógica
+		 	//requisições http
+
+		 	try {
+		 		// tod aplicação passível de erro deve ficar dentro do try, pode usar quantos try necessário, após tentar alguma coisa 
+		 		console.log(video[0]['nome'])
+		 	}	catch (erro) { // parametro pode ter qualquer nome, ele representa o erro 
+		 		//console.log(e)
+		 		tratarErro(erro)
+		 		//ele esconde o erro e aparece a mensagem no lugar
+		 		console.log('Agora sim podemos tratar esse erro')
+		 		throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora ')
+
+
+		 	} finally {  //precisa ser finalizado
+		 		console.log('A aplicação não morreu (try / catch)')
+		 	}
+		 }
+
+
+		 function tratarErro (e){
+		 	// Lógica para registrar o erro no servidor
+		 	console.log(e)
+		 }
+		 getVideo(video)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
