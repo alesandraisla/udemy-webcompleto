@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Bom location</title>
+	<meta charset="utf-8">
+	<script>
+
+		// O interpretador do JS vai a partir do objeto window, acessar o objeto location e forçar a colocação de uma nova url do atributo href, ou seja, está criando um redirecionamento feito de forma programática
+		//window.location.href="http://www.google.com"
+
+
+	</script>
+</head>
+<body>
+
+<button onclick="window.location.href='http://www.google.com'">
+	Acessar Google
+</button>
+<button onclick="window.location.href='https://eternaspalavras.tumblr.com/'">
+	Acessar Eternas Palavras
+</button>
+<button onclick="window.location.assign('https://eternaspalavras.tumblr.com/')">
+	Carregar um novo documento
+	<!--Carregar um novo documento e ter opção de volta ao documento original-->
+</button>
+<button onclick="window.location.reload('https://eternaspalavras.tumblr.com/')">
+	Recarregar a página
+	<!--Carrega a página atual-->
+</button>
+<button onclick="window.location.replace('https://eternaspalavras.tumblr.com')">
+	Substituir página atual
+	<!-- Remove url do documento, portanto não é possível voltar para navegar de volta (historico)-->
+	
+</button>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+.mosca1 {
+	width: 50px;
+	height: 50px;
+}
+
+.mosca2 {
+	width: 70px;
+	height: 70px;
+}
+
+.mosca3 {
+	width: 90px;
+	height: 90px;
+}
+
+.ladoA {
+	transform: scaleX(1);   /*Informa o lado normal da imagem*/
+}
+
+.ladoB{
+	transform: scaleX(-1); /*Inverso da imagem*/
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Timing</title>
+	<meta charset="utf-8">
+	<script>
+
+		//No momento que esta instrução for interpretada pelo JS ele vai escalar uma função para ser executada 2 segundos dali em diante
+		//setTimeout(function() {document.write('Teste')}, 2000)
+
+
+//decrementando de 5 a 0 e quando chegar em 0 recarregar a página
+		var i = 5
+/*
+	setInterval(function(){
+		document.write(i + ' <br> ')
+		i--
+		if(i === 0) {
+			window.location.reload()
+		}
+	},1000)
+*/
+// Interromper a execução 
+	var x = setInterval(function(){
+		document.write(i + ' <br> ')
+		i--
+		if(i === 0) {
+			clearInterval(x)
+		}
+	}, 1000)
+
+
+
+
+/*
+		 setInterval(function() { 
+			document.write('Teste' + count++)
+		}, 500);
+
+        var count = 0
+
+        /*
+
+
+		for (let i = 0; i < 100; i++) {
+			setTimeout((function(){
+				let abc = i;
+				document.write('Loro' + abc + " <br>")
+			}).bind(this),500) 
+		}
+
+		console.log(i)
+		
+*/
+		
+		
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
