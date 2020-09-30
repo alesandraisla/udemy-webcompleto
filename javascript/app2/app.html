@@ -9,25 +9,24 @@
 
 	<div class="painel">
 		<div class="vidas">
-			<img src="imagens/coracao_vazio.png">
-			<img src="imagens/coracao_cheio.png">
-			<img src="imagens/coracao_cheio.png">
+			<img id="v1" src="imagens/coracao_cheio.png">
+			<img id="v2" src="imagens/coracao_cheio.png">
+			<img id="v3" src="imagens/coracao_cheio.png">
 			
 		</div>
-		<div class="cronometro"> Tempo restante: ?
-			
-		</div>
+		<div class="cronometro"> Tempo restante: <span id="cronometro"></span> </div>
 		
 	</div>
 
 
 
 	<script>
-		posicaoRandomica()
+		document.getElementById('cronometro').innerHTML = tempo
 
-		setInterval(function(){	   //A cada 1 segundo o elemento aparece na página automaticamente
+		
+		var criarMosca = setInterval(function(){	   //A cada 1 segundo o elemento aparece na página automaticamente
 			posicaoRandomica()
-		},1000)
+		},criaMoscaTempo)
 	</script>
 </body>
 </html>

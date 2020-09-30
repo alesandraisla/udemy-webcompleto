@@ -6,6 +6,23 @@ e chamar a funcion no body pelo onresize
 
 var altura = 0
 var largura = 0
+var vidas = 1
+var tempo = 10
+var criaMoscaTempo = 1500
+
+var nivel = window.location.search // atributo serach trará tudo que está depois da ?
+nivel = nivel.replace('?', '')// replace substitui
+
+if(nivel === 'facil'){
+	//1500
+	criaMoscaTempo = 1500
+}else if (nivel ==='normal'){
+	//1000
+	criaMoscaTempo = 1000
+} else if (nivel === 'dificil'){
+	//750
+	criaMoscaTempo = 750
+}
 
 function ajustaTamanhoPalcoJogo () {
 	 altura = window.innerHeight
@@ -15,6 +32,19 @@ function ajustaTamanhoPalcoJogo () {
 }
 
 ajustaTamanhoPalcoJogo()
+
+// cronometro de tempo do jogo
+var cronometro = setInterval (function(){
+//caso o usuario vença a partida
+	tempo -= 1
+	if (tempo <0){
+		clearInterval(cronometro)
+		clearInterval(criarMosca)
+		window.location.href = 'vitoria.html'
+	} else{
+	document.getElementById('cronometro').innerHTML = tempo //inner dentro das tags
+	}
+}, 1000)
 
 /************
  criando posições randômicas 
@@ -29,6 +59,15 @@ function posicaoRandomica(){
 	// remover a mosca anterior (caso exista)
 	if(document.getElementById('mosca')){
 		document.getElementById('mosca').remove()
+
+		//afetará o elemento vidas caso nao clicar na mosca
+		if(vidas > 3){
+			window.location.href = 'fim_de_jogo.html'
+		} else{
+			//console.log('elemento selecionado foi: v' + vidas)
+		document.getElementById('v' + vidas).src="imagens/coracao_vazio.png"
+		vidas++
+		}
 	}
 
 
@@ -47,6 +86,10 @@ function posicaoRandomica(){
 	mosca.style.top = posicaoY + 'px'
 	mosca.style.position = 'absolute'
 	mosca.id = 'mosca'
+	/*Ação quando clica na mosca antes de desaparecer*/
+	mosca.onclick= function(){
+		this.remove() // faz referência ao próprio elemento da função
+	}
 
 	document.body.appendChild(mosca)		// adicionando um filho para o body
 
