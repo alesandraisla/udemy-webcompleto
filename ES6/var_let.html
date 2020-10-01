@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+	
+	// 3 escopos: global, função e bloco
+	// a função precisa chamar fora dela
+
+	
+
+	let anime = 'Naruto'
+	
+	{
+		
+		let anime = "Bleach"
+		console.log('dentro do bloco:' + anime);
+	}
+
+	console.log('fora do bloco:' + anime);
+
+
+
+	</script>
+</head>
+<body>
+
+	<div id="output"></div>
+
+</body>
+</html>
