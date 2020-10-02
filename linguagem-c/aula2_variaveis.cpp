@@ -20,9 +20,7 @@ int main (){
 	idadeTotal = primeiraIdade + segundaIdade + terceiraIdade;
 	
 	printf(" Soma das idades = %i ", idadeTotal);
-	
-	
-		
+			
 	
 	return 0;
 }
