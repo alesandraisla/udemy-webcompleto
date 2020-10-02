@@ -22,6 +22,9 @@ int main () {
 	int anoAtual;
 	int anoNascimento;
 	int idade;
+
+	
+
 	
 	printf("========== Descobrindo a idade ==========\n\n");
 	
@@ -31,10 +34,27 @@ int main () {
 	printf("Digite o seu ano de nascimento:");
 	scanf("%i", &anoNascimento);
 	
-	idade = anoAtual - anoNascimento;
+	printf("\n===== Resultado =====\n\n");
 	
-	printf("Sua idade e´: %i", idade);
-	printf(" anos");
+	
+	if (anoNascimento > anoAtual){
+		printf(" Erro: Data de nascimento superior a data atual. \n Favor refazer o teste");
+	
+	} else if (anoNascimento <= 0){
+		printf(" Erro: Data de nascimento incorreta. A data de nascimento tem que ser maior ou igual a 1. \n Favor refazer o teste");
+		
+	} else {
+		idade = anoAtual - anoNascimento;
+		printf("Sua idade e´: %i", idade);
+		printf(" anos");
+		
+	}
+	
+	
+	
+	
+	
+
 	
 	
 	
