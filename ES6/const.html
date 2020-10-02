@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+	//boa pratica usar caract. maiusculo, dever atribuir valor no momento da criação 
+	const ANIME = 'Naruto'
+
+		function x(){
+		const ANIME = 'Bleach'
+		console.log('dentro da função:' + ANIME)
+	}
+
+	x()
+
+	console.log('escopo global:' + ANIME)
+
+	</script>
+</head>
+<body>
+
+	<div id="output"></div>
+
+</body>
+</html>
