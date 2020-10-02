@@ -51,6 +51,8 @@ int main () {
 	}
 	
 	
+		printf("========== By Alesandra Mempis ==========\n\n");
+	
 	
 	
 	
