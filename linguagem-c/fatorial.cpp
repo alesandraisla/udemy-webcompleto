@@ -10,8 +10,8 @@ int main (){
 	int resposta = 1;
 	
 	
-	for (fatorial = 5; fatorial >= 1; fatorial--){
-	//	resposta = fatorial - 1; 
+	for (fatorial = 5; fatorial >= 1; fatorial--){    //enquanto o fatorial que é 5 for maior ou igual a 1 reduza 1 de fatorial
+		//	resposta = fatorial - 1; 
 		resposta *= fatorial; // resposta = resposta * fatorial
 	}
 	
