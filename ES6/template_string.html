@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Template String</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+	
+	let nome = 'Vanessa';
+
+	//console.log('Oi' + ',' + nome + ',' + 'tudo bem?');
+	// O template string deve ser colocado dentro da crase ``
+	
+	// Template String: Permite dentro de uma string abrir uma janela para o processador interpretar toda codificação inserida entre as chaves.
+
+	console.log(`Oi ${nome}, tudo bem?`);
+
+	console.log(`7+7 = ${7+7}`); // Ele executa expressão aritmética
+
+	function calcular(x,y){
+		return x*y;
+	}
+
+	console.log(`A multiplicação de 8*8 é:  ${calcular(8,8)}`);
+	
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
