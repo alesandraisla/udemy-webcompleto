@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Template String</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	//arrow function =>
+/*
+	let quadrado = function (x = 5) {
+		return x * x
+	}
+
+*/
+/*
+	let quadrado = (x) => {
+		return x * x
+	}
+	*/
+
+	// Se tiver apenas um unico parâmetro não precisa colocar entre parêntese e uma única instrução de retorno não precisa das chaves e nem return
+	/*
+	let quadrado = x => x * x
+	*/
+	
+
+	// chamar uma função contida dentro de uma variavel
+	//document.write(quadrado(3));
+	
+	// node % Se o resultado for 0 é par se for 1 é impar
+	/*
+	let parOuImpar = function(numero){
+
+		if(numero % 2 === 0){
+			return 'par'
+		} else{
+			return 'ímpar'
+		}
+	}
+*/
+/*
+	let parOuImpar = numero => {
+		if(numero % 2 === 0){
+			return 'par'
+		} else{
+			return 'ímpar'
+		}
+	}
+	*/
+//if ternário , retorno implícito
+	let parOuImpar = numero => numero % 2 === 0 ? 'par' : 'ímpar'
+	
+	document.write(parOuImpar(4));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

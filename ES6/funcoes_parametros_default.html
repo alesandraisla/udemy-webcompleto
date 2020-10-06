@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	function contarUmaHistoria(personagem = 'Sonho', atividade = 'correr no parque', nome_dono = 'Yuna'){
+		document.write(`Era uma vez um coelho chamado ${personagem}, ele adorava ${atividade},sua dona era a ${nome_dono}, e eles viveram felizes para sempre`);
+	}
+
+	//Se os parâmetros não forem encaminhados na chamada da função, não tem problema, pois foi informado o default dentro da função.
+
+	//contarUmaHistoria();  // Chamar a função possibilitará a exibição no browser 
+
+	// pode definir o parametro o que valerá será o da chamada
+	//contarUmaHistoria('Felix', 'comer cenoura', 'Luna'); 
+
+	// Usando o undefined, JS considerará o valor que está no parametro da função 
+	contarUmaHistoria(undefined, 'comer cenoura', 'Luna' ); 
+	
+
+	</script>
+</head>
+<body>
+
+	<div id="output"></div>
+
+</body>
+</html>
