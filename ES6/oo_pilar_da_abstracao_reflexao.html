@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Pilar da abstração reflexão</title>
+<meta charset="utf-8">
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel">
+// Um software de marcenaria
+// cadeira e sofa
+
+// paradigma procedural
+//cadeira 
+/*
+let qtde_pernas = 4;
+let giratoria = false;
+let cor = 'azul';
+
+// array de cadeiras
+let cadeiras = Array()
+
+cadeiras [0] = Array()
+cadeiras [0]['qtde_pernas'] = 4;
+cadeiras [0]['giratoria'] = false;
+cadeiras [0]['cor'] = 'azul';
+
+cadeiras [1] = Array()
+cadeiras [1]['qtde_pernas'] = 1;
+cadeiras [1]['giratoria'] = true;
+cadeiras [1]['cor'] = 'rosa';
+
+
+function girar_cadeira(indice){
+	if(cadeiras[indice]['giratoria'] === true){
+		console.log('Girou');
+	}else {
+		console.log('Cadeira não é giratória');
+	}
+}
+
+//função para adicionar nova cadeira
+function adicionar_cadeira(qtde_pernas, giratoria, cor) {
+	let cadeira = Array ()
+
+	cadeira['qtde_pernas'] = qtde_pernas;
+	cadeira['giratoria'] = giratoria;
+	cadeira['cor'] = cor;
+
+	cadeiras.push(cadeira);
+}
+
+adicionar_cadeira(3,false,'verde');
+console.log(cadeiras);
+
+
+girar_cadeira(1);
+*/
+
+// paradigma de Orientação a objetos
+
+class Cadeira {   //modelo de objeto
+	constructor(qtde_pernas, giratoria, cor){ //ciclo de vida do objeto
+		this.qtde_pernas = qtde_pernas;
+		this.giratoria = giratoria;
+		this.cor = cor;
+	}  
+	girarCadeira(){
+		if(this.giratoria === true){
+			console.log('A cadeira girou');
+		} else {
+			console.log('A cadeira não girou');
+		}
+	}
+}
+
+
+//let cadeira = new Cadeira (4, false, 'verde');
+//let cadeira2 = new Cadeira (1, true, 'azul');
+
+let cadeiras = Array()
+cadeiras.push(new Cadeira(4, false, 'verde'))
+cadeiras.push(new Cadeira(1, true, 'azul'))
+
+console.log(cadeiras);
+//console.log(cadeira);
+//cadeira2.girarCadeira();
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

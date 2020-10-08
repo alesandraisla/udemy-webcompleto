@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar Abstração Reflexão dois </title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	// sofá 
+	//cor
+	// qt de lugares/
+	//reclinavel ou nao
+
+	class Sofa {
+		constructor(cor, qtdDeLugares, reclinavel){
+			this.cor = cor;
+			this.qtdDeLugares = qtdDeLugares;
+			this.reclinavel = reclinavel;
+		}
+		sofaReclinavel(){
+			if(this.reclinavel === true){
+				console.log('O sofá é reclinável');
+			} else {
+				console.log('O sofá não reclinável');
+			}
+		}
+	}
+	let sofa = new Sofa ('amarelo', 3, false);
+	console.log(sofa);
+	
+	sofa.sofaReclinavel();  // chamar a condição 
+
+	//let mesas = Array()
+	//mesas.push(new Mesa('amarelo', 3, false));
+
+	//console.log(mesas);
+
+	
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
