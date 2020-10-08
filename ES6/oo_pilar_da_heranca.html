@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+//modelo pai 
+	class Animal {
+		constructor(){ //define os atributos
+			this.cor = '';
+			this.tamanho = null;
+		}
+		dormir(){
+			console.log('dormir');
+		}
+	}
+
+	//modelo filho
+	class Cachorro extends Animal{ //herda a classe animal
+		constructor(){
+			super()
+			this.orelhas = 'Grandes e caídas'
+		}
+		//metodo
+		correr(){
+			console.log('Correr');
+		}
+		rosnar(){
+			console.log('Rosnar');
+		}
+	}
+
+
+	//modelo filha
+	class Passaro extends Animal {
+		constructor(){
+			super()
+			this.bico = 'Curto';
+		}
+		voar(){
+			console.log('Voar');
+		}
+	}
+
+	// cascata, a class recebe atributos do Passado e Animal
+	class Papagaio extends Passaro {
+		constructor(){
+			super()
+			this.sabeFalar = true;
+		}
+		falar(){
+			console.log('Falar');
+		}
+	}
+
+	
+	let cachorro = new Cachorro();
+	let passaro = new Passaro();
+	let papagaio = new Papagaio();
+
+	cachorro.dormir();
+	passaro.dormir();
+	papagaio.falar();
+	papagaio.dormir();
+	papagaio.voar();
+
+	//console.log(cachorro);
+	//console.log(passaro);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
