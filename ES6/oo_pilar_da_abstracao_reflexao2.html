@@ -11,7 +11,7 @@
 	//cor
 	// qt de lugares/
 	//reclinavel ou nao
-
+/*
 	class Sofa {
 		constructor(cor, qtdDeLugares, reclinavel){
 			this.cor = cor;
@@ -35,6 +35,37 @@
 	//mesas.push(new Mesa('amarelo', 3, false));
 
 	//console.log(mesas);
+*/
+
+	//jogos
+	class Planta{
+		constructor(temEspinhos, possuiFlores, cor, tamanho){
+			this.temEspinhos = temEspinhos;
+			this.possuiFlores = possuiFlores;
+			this.cor = cor;
+			this.tamanho = tamanho;
+
+		}
+		nomePlanta(){
+			if(this.temEspinhos === true){
+				console.log('É um cacto');
+			}else {
+				console.log('É uma planta');
+			}
+		}
+	}
+
+	//let plantas = Array();
+	//plantas.push(new Planta(true, false, 'verde', 'medio'));
+	//console.log(plantas);
+	//plantas.push(new Planta(false, true, 'verde', 'pequeno'));
+
+	let planta1 = new Planta(true, false, 'verde', 'medio');
+	planta1.nomePlanta();
+	console.log(planta1);
+
+
+
 
 	
 

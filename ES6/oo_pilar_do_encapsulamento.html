@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	class Tv {
+		constructor(){
+			this._relacaoCanais = Array(2,4,5,7,10); // underline deixa o método privado
+			this._canalAtivo = 5;
+			this._volume = 5;
+		}
+		// get (recuperar o valor)
+		get canalAtivo(){
+			return this._canalAtivo;
+		}
+		// set  (atualizar o valor)
+		set canalAtivo(canal){
+			//indexOf retona o indice do Array, quando não existe recebe o -1
+			if(this._relacaoCanais.indexOf(canal) !== -1){
+				this._canalAtivo = canal;
+			}			
+		}
+	}
+
+	let tv = new Tv ()
+	tv.canalAtivo = 10 // mudar o atributo
+	console.log(tv.canalAtivo); 
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
