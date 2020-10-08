@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	let pessoa = {
+		nome: 'Maria',
+		idade: 25
+	}
+
+	console.log(pessoa);
+
+
+	//------------------------------------------
+	//incluir qualquer conjunto para o nome valor
+
+	pessoa.sexo = 'Feminino'
+
+	console.log(pessoa);
+
+	pessoa.altura = 1.75
+	console.log(pessoa);
+	//inclusão de função
+	pessoa.dizerOi = () => console.log('Olá, tudo bem?');
+
+	pessoa.dizerOi();
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

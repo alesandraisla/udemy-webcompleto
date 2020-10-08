@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	let nome = 'Melissa'; // document.getElementById('nome').value
+	let idade = 25;
+	let sexo = 'Feminino';
+	let profissao = 'Veterinaria';
+
+	let objeto = {
+		nome: nome,
+		idade: idade,
+		sexo:sexo,
+		profissao: profissao,
+		exibirResumo:function(){
+			console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é, ${this.profissao}`)
+		}
+	}
+
+	console.log(objeto); // descrição do objeto
+	objeto.exibirResumo(); //chamada da função
+
+	//para variaveis com o mesmo nome da chave para o nomevalor, pode omitir a definição do nome do par
+	let objeto2 = {
+		nome,   //nome = nome variavel / valor = valor da variável
+		idade,
+		sexo,
+		profissao,
+		exibirResumo: function(){
+			console.log(`${this.nome}, ${this.idade} anos, ${this.sexo}, ${this.profissao}`)
+		}
+
+	}
+
+	console.log(objeto2);
+	objeto2.exibirResumo();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
