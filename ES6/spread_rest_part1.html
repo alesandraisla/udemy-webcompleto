@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	// spread -> espalhar estrutura de dados
+
+	let tituloArtigo = 'Como utilizar o operador rest/spread';
+
+	console.log(tituloArtigo);
+	console.log(...tituloArtigo); //usando spread ...
+	console.log([...tituloArtigo]) // com Array colocando cada string dentro de um indice
+
+	// arrays
+	let listaCursos1 = ['NodeJS e MongoDB', 'ES6', 'TypeScript e Angular 4']
+	let listaCursos2 = ['Multiplataforma Android/IOS', 'Introdução ao GNU/Linux']
+	let listaCursosCompleto = ['Web Completo', 'Android Completo', ...listaCursos1, ...listaCursos2]
+
+	console.log(listaCursosCompleto);
+
+	// objetos
+	let pessoa = { nome: 'Lara', idade:28}
+	let clone = { ...pessoa, endereco: 'Rua Abc'};
+
+	console.log(clone);
+
+//=========================
+
+	let log = function(...strs){
+		console.log(strs.join(','))
+	}
+
+	log( 'NodeJS e MongoDB', 'ES6', 'TypeScript e Angular 4');
+
+
+
+	
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

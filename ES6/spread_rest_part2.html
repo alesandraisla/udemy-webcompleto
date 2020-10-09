@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+	// rest - > juntar os dados
+	// receber todos os parâmetros e juntar todos em uma estrutura de array  
+
+ 	function soma(...param){
+ 		let resultado = 0;
+ 	//	console.log(param);
+
+ 		param.forEach(v => resultado += v ) //forEach percorrer cada elemento do array
+
+ 		return resultado;
+
+ 	}
+
+ 	console.log(soma(3, 8, 5, 7)); //pode encaminhar quantos parâmetros quiser
+
+
+ 	function multiplicacao(m, ...p){
+ 		//console.log(m);
+ 		let resultado = 0;
+ 		//console.log(p);
+
+ 		p.forEach(v => resultado += m * v);
+
+ 		return resultado;
+
+ 	}
+
+
+ 	console.log(multiplicacao(5,7,12,3,49));
+
+ 	// o primeiro parâmetro que é o 5 será recebido no parâmetro m e os demais serão recebidos no p
+	
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	let produto = {
+		descricao: 'Notebook',
+		preco: 1800,
+		detalhes: { //outro objeto literal atributos de outros objetos
+			fabricante: 'abc',
+			modelo: 'xyz'
+		}
+	}
+
+//token 
+// array => []
+// objeto => {}
+
+	//let { descricao, preco } = produto //dentro de objeto usa chaves 
+	//let {descricao: d, preco: p} = produto; // mudar o nome da variavel
+
+	//let {descricao: d, preco: p = 1000, desconto = 5} = produto; //criar um novo atributo e colocar um valor para nao retornar undefined, no preco nao mudará, pois o valor já existe 
+
+	//extração de objetos pertencentes de outros objetos
+	let {detalhes: { fabricante: f, modelo = 'Não informado'}} = produto;
+
+
+	//console.log(descricao, preco);
+	//console.log(d,p, desconto);
+	console.log(f, modelo);
+	// composição
+	// é um  (class, objetos literais, funções construtoras)
+	// tem um (objeto dentro de outro objeto)	
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	// array
+	// spread
+/*
+	let arr = [10, 20, 30, 40]
+
+	let [ a, ...resto ] = arr; // junção do destructuring e spread
+
+	console.log(a) // 10
+	console.log(resto) // demais valores juntados
+*/
+
+// objeto
+// rest
+
+	let obj = {
+		a: 10,
+		b: 20,
+		c: 30,
+		d: 40
+	}
+
+	let {a, ...z} = obj;
+
+	console.log(a);
+	console.log(z); // unificados dentro de um unico objeto
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

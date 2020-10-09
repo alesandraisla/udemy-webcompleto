@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+		// desestruturador - tira valores de dentro de uma estrutura 
+		
+	// array
+
+	let frutas = ['Abacaxi', 'Uva', 'Pera', 'Manga']
+
+	//let [ a, b, , c ] = frutas; //pular o indice coloca espaço entre virgula
+	let [a, b, c, d, e = 'Morango']  = frutas;  //atribuição de valor caso o fosse undefined (se não existir)
+
+	//let a = frutas[0]
+	//let b = frutas[1]
+	//let c = frutas[2]
+
+	
+	//console.log(a, b, c, d, e);
+                      
+
+	let coisas = [['Abacaxi', 'Uva', 'Pera', 'Laranja'], ['Yuna', 'Tidus']]
+	//let [, [, x2]] = coisas; // extrair apenas um indice <Tidus>
+	let [[ , , y2], ,] = coisas;  // extrair pera
+
+	//console.log(x2); 
+	console.log(y2);  
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

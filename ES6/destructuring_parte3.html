@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	// array, extrai a sequencia do array 
+
+/*
+	let arr = [10, 20, 30, 40]
+
+	function teste([a, b, , c, d = 100]){  //só colocar o colchete 
+		console.log(a,b, c, d);
+	}
+
+	//teste(arr[0], arr[1]) //forma isolada
+	teste(arr);
+*/
+
+	// objeto , extrai o atributo do objeto desejad 
+
+
+	let obj = {
+		a: 10,
+		b: 20,
+		c: 30, 
+		d: 40,
+	}
+
+	/*function teste(a, b){
+		console.log(a, b)
+	}
+	//teste(obj.a, obj.b); //encaminhando individualmente os valores 
+	*/
+
+	function teste({ a: x, b, d, z = 10}){
+		console.log(x, b, d, z)
+	}
+
+	teste(obj);
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
