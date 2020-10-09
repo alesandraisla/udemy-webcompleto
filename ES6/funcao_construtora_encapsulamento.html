@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	//função construtora que será convertida para objeto a partir do new
+	let Carro = function(){
+		//atributos publicos
+		this.cor = 'Rosa';
+		this.modelo = 'Logan';
+		this.velocidadeAtual = 0;
+		this.velocidadeMaxima = 180;
+
+		this.acelerar = function() {//atributo que recebe como valor uma função
+			let velocidade = this.getVelocidadeAtual() + 50;
+			if(velocidade > this.velocidadeMaxima){
+				velocidade = this.velocidadeMaxima;
+			}
+			this.setVelocidadeAtual(velocidade);
+		} 
+		this.getVelocidadeAtual = function(){
+			return this.velocidadeAtual;
+		} 
+		this.setVelocidadeAtual = function(velocidadeAtual){
+			this.velocidadeAtual = velocidadeAtual;
+		}
+	}
+
+	let carro = new Carro();
+	console.log(carro.velocidadeAtual);
+	carro.acelerar()
+	console.log(carro.velocidadeAtual);
+	carro.acelerar()
+	console.log(carro.velocidadeAtual);
+	carro.acelerar()
+	console.log(carro.velocidadeAtual);
+	carro.acelerar()
+	console.log(carro.velocidadeAtual);
+	carro.acelerar()
+	console.log(carro.velocidadeAtual);
+	carro.acelerar()
+	console.log(carro.velocidadeAtual);
+	carro.acelerar()
+	console.log(carro.velocidadeAtual);
+
+
+	let Carro2 = function(){
+
+		var velocidadeMaxima = 180;  // para privar o objeto, variaveis declaradas dentro do escopo da função podem ser utilizadas dentro de escopos do bloco ou escopo de outras funções desde que estejam dentro do escopo da função pai. Externamente não poderá ser alterado a aplicação dessa variável
+		var quilometrosrodados = 0;
+
+		this.cor = 'Azul';
+		this.modelo= 'Sandero';
+		this.velocidadeAtual = 0;
+
+		this.acelerar = function(){
+			let velocidade = this.getVelocidadeAtual() + 50;
+			if(velocidade > velocidadeMaxima){
+				velocidade = velocidadeMaxima;
+			}
+			this.setVelocidadeAtual(velocidade);
+
+			setQuilometrosRodados(0.07); //executar a função
+			console.log(quilometrosrodados);
+		}
+		this.getVelocidadeAtual = function (){
+			return this.velocidadeAtual;
+		}
+		this.setVelocidadeAtual = function(velocidadeAtual){
+			this.velocidadeAtual = velocidadeAtual;
+		}
+		var setQuilometrosRodados = function(q){  //parâmetros
+			quilometrosrodados += q;
+		}
+	}
+
+	let carro2 = new Carro2();
+	console.log(carro2.velocidadeAtual);
+	carro2.acelerar();
+	console.log(carro2.velocidadeAtual);
+	carro2.acelerar();
+	console.log(carro2.velocidadeAtual);
+	carro2.acelerar();
+	console.log(carro2.velocidadeAtual);
+	carro2.acelerar();
+	console.log(carro2.velocidadeAtual);
+	carro2.acelerar();
+	console.log(carro2.velocidadeAtual);
+
+	console.log(carro);
+	console.log(carro2);
+	
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

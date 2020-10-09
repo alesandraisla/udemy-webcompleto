@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	let assinatura = {
+		idCliente: 1000,
+		descricao: 'Acesso a internet',
+		status(){
+			console.log('Ativo');
+		}
+	}
+
+	console.log(assinatura.descricao);
+
+	let y = assinatura //nova variável associada a variável assinatura, recebe a referencia do objeto 
+
+	console.log(y.descricao);
+
+	y.descricao = 'Internet + tv + telefone'; //modificou a descrição
+
+	//significa que pode acessar o mesmo objeto atraves da var assinatura e var y
+	//faz com que variaveis diferentes apontem para o mesmo lugar
+	console.log(assinatura.descricao);
+	console.log(y.descricao);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

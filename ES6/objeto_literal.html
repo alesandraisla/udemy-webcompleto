@@ -6,7 +6,7 @@
 	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 	<script type="text/babel">
-
+//Objeto criado com base na class
 	class Produto {
 		constructor(descricao, preco){
 			this.descricao = descricao;
@@ -20,7 +20,7 @@
 	let produto = new Produto('Notebook', 2200);
 	produto.verDescricao();
 
-//criacao de um objeto literal
+//criacao de um objeto literal (descritivo) combina pares de valores termina com virgula
 	let produtoLiteral = {
 		descricao: 'Geladeira',
 		preco: 1800,
@@ -28,8 +28,8 @@
 			console.log(`${this.descricao} por apenas ${this.preco}`)
 		}
 	}
-//acessar os atributos relativos aos métodos
-	produtoLiteral.verDescricao();
+
+	produtoLiteral.verDescricao(); //acessar os atributos relativos aos métodos
 
 	</script>
 </head>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	let Bicicleta1 = {
+		cor: 'Branca',
+		marcha: 'única',
+		aro: 12,
+		pedalar() {
+			console.log('Método pedalar executado');
+		}
+	}
+	let Bicicleta2 = {
+		cor: 'Azul',
+		marcha:'18',
+		aro:26,
+		pedalar(){
+			console.log('Método de pedalar executado');
+		}
+	}
+
+	console.log(Bicicleta1);
+	console.log(Bicicleta2);
+
+	//=============================
+
+	let BicicletaFactory = function(cor, marcha, aro){
+		//lógica
+		//requisição http
+		// resposta http
+		return {
+			cor,
+			marcha,
+			aro,
+			pedalar(){
+				console.log('Método pedalar executado');
+			}
+		}
+	}
+	//Criação de novos objetos
+	let Bicicleta3 = BicicletaFactory('Rosa', '18', 26);
+	let Bicicleta4 = BicicletaFactory('Roxo', '21', 29);
+
+	console.log(Bicicleta3);
+	console.log(Bicicleta4);
+	
+	console.log(Bicicleta3);
+	console.log(`Cor: ${Bicicleta3.cor}`);
+	Bicicleta3.pedalar();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

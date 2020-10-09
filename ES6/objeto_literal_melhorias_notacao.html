@@ -27,11 +27,11 @@
 
 	//para variaveis com o mesmo nome da chave para o nomevalor, pode omitir a definição do nome do par
 	let objeto2 = {
-		nome,   //nome = nome variavel / valor = valor da variável
+		nome,   
 		idade,
 		sexo,
 		profissao,
-		exibirResumo: function(){
+		exibirResumo(){ //chama a função a partir do nome dela
 			console.log(`${this.nome}, ${this.idade} anos, ${this.sexo}, ${this.profissao}`)
 		}
 
