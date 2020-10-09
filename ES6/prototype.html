@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+	//aviao 
+	//atributos cor e modelo ; metodo levantarVoo
+
+	/// objeto literal
+	let a1 = {
+		cor: 'Branco',
+		modelo: 'Airbus a380',
+		levantarVoo: function() { 
+			console.log('Levantar voo');
+		}
+	}
+	// função construtora
+	let AvisaoF = function(){
+		this.cor = 'Azul',
+		this.modelo = 'Boeing 787',
+		this.levantarVoo = function() {
+			console.log('Levantar voo');
+		}
+	}
+
+	//instanciar o objeto
+	let a2 = new AvisaoF()
+
+	//classe
+	class Aviaoc {
+		constructor(){
+			this.cor = 'Vermelho',
+			this.modelo = 'Embraer E-Jets'
+		}
+		levantarVoo(){
+			console.log('Levantar voo');
+		}
+	}
+
+	let a3 = new Aviaoc()
+
+	console.log(a1);
+	console.log(a2);
+	console.log(a3);
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

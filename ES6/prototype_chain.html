@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pilar da abstração</title>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	Object.prototype.attr30 = 'z'   // esse protótipo é global para toda aplicação
+
+	//variáveis objetos  // atributos  [relação de herança]
+	let animal = { attr1: 'a'} 
+	let vertebrado = { __proto__: animal, attr2: 'b'}
+	let ave	= { __proto__: vertebrado, attr3: 'c'} 
+
+	console.log(ave.attr3, ave.attr2, ave.attr1, ave.attr30);
+	
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
